@@ -1,0 +1,257 @@
+/* :root {
+  --primary: #5e81ac;
+  --secondary: #88c0d0;
+  --accent: #d8dee9;
+  --dark-bg: #2e3440;
+  --light-bg: #eceff4;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  padding-top: 70px;
+  background-color: var(--light-bg);
+  color: #2e3440;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary);
+  transform: scale(1.05);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.navbar-light .nav-link {
+  color: #4c566a;
+  transition: color 0.3s ease;
+}
+
+.navbar-light .nav-link:hover {
+  color: var(--primary);
+}
+
+header {
+  background: linear-gradient(90deg, linear-gradient(135deg, #1e3c72, #2a5298) !important, #6610f2);
+  color: var(--accent);
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+header h1 {
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+.scroll-offset {
+  scroll-margin-top: 30px;
+}
+ */
+body { scroll-behavior: smooth; }
+.hero { 
+  height: 100vh; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  background: linear-gradient(135deg, #1e3c72, #2a5298); 
+  color: white; 
+  text-align: center; 
+}
+.hero h1 { font-size: 3rem; font-weight: bold; }
+.profile-pic {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+.section-title { font-weight: 700; margin-bottom: 2rem; text-align: center; }
+.project-card img { height: 200px; object-fit: cover; }
+.skills span { margin: 5px; padding: 8px 15px; border-radius: 20px; background: linear-gradient(135deg, #1e3c72, #2a5298); color: white;  display: inline-block; }
+.timeline-vertical { position: relative; margin: 0; padding: 0; list-style: none; }
+.timeline-vertical::before { content: ''; position: absolute; left: 50%; top: 0; bottom: 0; width: 4px; background: linear-gradient(135deg, #1e3c72, #2a5298); transform: translateX(-50%); }
+.timeline-vertical .timeline-item { position: relative; width: 50%; padding: 20px; }
+.timeline-vertical .timeline-item-left { left: 0; text-align: right; }
+.timeline-vertical .timeline-item-right { left: 50%; }
+.timeline-vertical .timeline-item-left .timeline-dot { width: 20px; height: 20px; background: linear-gradient(135deg, #1e3c72, #2a5298); border-radius: 50%; position: absolute; top: 60px; left: 100%; transform: translateX(-50%); z-index: 2; }
+.timeline-vertical .timeline-item-right .timeline-dot { width: 20px; height: 20px; background: linear-gradient(135deg, #1e3c72, #2a5298); border-radius: 50%; position: absolute; top: 60px; right: 90%; transform: translateX(-50%); z-index: 2; }
+
+.timeline-horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-horizontal::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    z-index: 1;
+}
+
+.timeline-horizontal .timeline-item {
+    position: relative;
+    flex: 1;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.timeline-horizontal .timeline-item.top .timeline-dot {
+    width: 16px;
+    height: 16px;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 2px #1e3c72;
+    margin: 5% auto;
+    position: relative;
+    z-index: 2;
+}
+
+.timeline-horizontal .timeline-item.bottom .timeline-dot {
+    width: 16px;
+    height: 16px;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 2px #1e3c72;
+    margin: 5% auto;
+    position: relative;
+    z-index: 2;
+}
+
+.timeline-horizontal .timeline-item.top .timeline-content {
+    padding-bottom: 150px;
+}
+.timeline-horizontal .timeline-item.bottom .timeline-content {
+    padding-top: 150px;
+}
+
+.timeline-horizontal .timeline-content .company {
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: block;
+}
+
+.timeline-content h5 {
+    color: #2a5298;
+}
+
+.timeline-item h5 {
+    color: #2a5298;
+}
+
+.timeline-item .company {
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: block;
+}
+
+.exp-web {
+    display: block;
+}
+
+.exp-mobile {
+    display: none;
+}
+
+
+@media (max-width: 768px) 
+{
+    .exp-mobile {
+        display: block;
+    }
+
+    .exp-web {
+        display: none;
+    }
+
+    .hero h1 {
+      font-size: 1.75rem;
+    }
+
+    /* .hero .lead {
+      font-size: 1rem;
+    } */
+
+    .hero a {
+      width: 100%;
+      margin-top: 0.75rem;
+    }
+
+}
+
+
+/* Override .btn-primary */
+.btn-primary {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  border: none;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background: linear-gradient(135deg, #2a5298, #1e3c72); /* subtle reverse on hover */
+  color: #fff;
+}
+
+/* Override .btn-outline-primary */
+.btn-outline-primary {
+  background: transparent;
+  border: 1px solid #2a5298 !important;
+  color: #2a5298 !important;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #fff !important;
+  border-color: transparent;
+}
+
+/* .btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: linear-gradient(135deg, #1e3c72, #2a5298) !important;
+    --bs-btn-border-color: linear-gradient(135deg, #1e3c72, #2a5298) !important;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #2a5298 !important;
+    --bs-btn-hover-border-color: #1e3c72 !important;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #1e3c72 !important;
+    --bs-btn-active-border-color: #2a5298 !important;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: linear-gradient(135deg, #1e3c72, #2a5298) !important;
+    --bs-btn-disabled-border-color: linear-gradient(135deg, #1e3c72, #2a5298) !important;
+} */
+
+
+footer { background: #212529; color: white; padding: 20px 0; text-align: center; }
+footer a { color: linear-gradient(135deg, #1e3c72, #2a5298) !important; margin: 0 10px; }
