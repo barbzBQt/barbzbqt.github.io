@@ -5,13 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio of Jerzon Barbacena - Full-Stack Developer specializing in .NET, Angular, JavaScript, and Cloud solutions. View my projects and services.">
-    <meta name="keywords" content="Senior Full Stack Developer, Portfolio, Software Engineer, Web Developer, Freelancer">
+    <meta name="keywords" content="Senior Full Stack Developer, Portfolio, Software Engineer, Web Developer, Freelancer, Shopify, API Integration, UX Design">
     <meta name="author" content="Jerzon Barbacena">
+    <meta property="og:title" content="Jerzon | Full Stack Developer & Consultant" />
+    <meta property="og:description" content="Explore modular dashboards, scalable APIs, and premium UX." />
+    <meta property="og:image" content="https://barbzbqt.github.io/preview.jpg" />
+    <meta property="og:url" content="https://barbzbqt.github.io/" />
+    <meta property="og:type" content="website" />
+
     <title>Jerzon Barbacena | Professional Profile</title>
 
     <link href="./assets/css/style.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3PPC9Z2EFN"></script>
     <script>
@@ -25,9 +32,9 @@
         gtag('config', 'G-3PPC9Z2EFN');
     </script>
 
-    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-    <script type="text/javascript">
+    <!-- <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script> -->
+    <!-- <script type="text/javascript">
         window.onload = function() {
             Calendly.initBadgeWidget({
                 url: 'https://calendly.com/jerzon-barbacena/30min',
@@ -37,7 +44,7 @@
                 branding: true
             });
         }
-    </script>
+    </script> -->
 </head>
 
 <body>
@@ -60,129 +67,58 @@
         </div>
     </nav>
 
-    <section id="home" class="hero">
+    <section id="home" class="hero text-center py-5" data-aos="fade-up">
         <div>
-            <h1>Hello, I'm <span class="text-warning">Jerzon Barbacena</span></h1>
-            <p class="lead">Senior Full-Stack Developer</p>
-            <a href="#projects" class="btn btn-light mt-3">See My Work</a>
-            <a href="./assets/documents/JBarbacenaCV.pdf" class="btn btn-outline-warning mt-3" target="_blank">Download Resume</a>
+            <!-- <h1>Hello, I'm <span class="text-warning">Jerzon Barbacena</span></h1> -->
+            <h1 id="typewriter-heading" class="text-center text-warning"></h1>
+            <div>
+                <h2 class="text-center">
+                    <span id="typewriter-line1"></span><br>
+                    <span class="text-warning" id="typewriter-line2"></span>
+                </h2>
+            </div>
+            <div>
+                <a href="#projects" class="btn btn-light mt-3 me-2">See My Work</a>
+                <a href="./assets/documents/JBarbacenaCV.pdf" class="btn btn-outline-warning mt-3" target="_blank">Download Resume</a>
+            </div>
+            
         </div>
     </section>
 
-    <section id="about" class="py-5 container">
+    <section id="about" class="py-5 container" data-aos="fade-up">
         <h2 class="section-title">About Me</h2>
         <div class="row align-items-center">
             <div class="col-md-4 text-center">
-                <img src="./assets/images/profile-picture.jpg" class="profile-pic mb-4" alt="Profile Picture">
+                <img src="./assets/images/profile-picture.jpg" class="profile-pic mb-4" alt="Profile Picture" loading="lazy">
             </div>
             <div class="col-md-8">
                 <p>I am a passionate developer with experience in building web applications, cloud-based solutions, and modern UI/UX. I thrive on solving real-world problems using technology.</p>
                 <h5>Skills:</h5>
-                <div class="skills">
-                    <span>.NET Ecosystem (Core, Framework, 6+)</span>
-                    <span>ASP.NET MVC & Razor View Engine</span>
-                    <span>Angular, React & JavaScript</span>
-                    <span>PHP</span>
+                <div class="mb-4 text-center">
+                    <button class="btn btn-outline-primary btn-sm me-2 mb-2" data-filter="all">All</button>
+                    <button class="btn btn-outline-primary btn-sm me-2 mb-2" data-filter="Frontend">Frontend</button>
+                    <button class="btn btn-outline-primary btn-sm me-2 mb-2" data-filter="Backend">Backend</button>
+                    <button class="btn btn-outline-primary btn-sm me-2 mb-2" data-filter="DevOps & Cloud">DevOps & Cloud</button>
+                    <button class="btn btn-outline-primary btn-sm me-2 mb-2" data-filter="CMS & SEO">CMS & SEO</button>
+                    <button class="btn btn-outline-primary btn-sm me-2 mb-2" data-filter="eCommerce & API">eCommerce & API</button>
+                    <button class="btn btn-outline-primary btn-sm me-2 mb-2" data-filter="UX & Strategy">UX & Strategy</button>
+                </div>
 
-                    <span>RESTful APIs & Microservices</span>
-                    <span>Database Management & Optimization</span>
-                    <span>Azure & AWS</span>
-                    <span>Layout Optimization & Accessibility</span>
-
-                    <span>Visual Storytelling & UI/UX</span>
-                    <span>User Insights</span>
-
-
-                    <span>CI/CD Pipelines</span>
-                    <span>Git & Azure DevOps</span>
-
-                    <span>WordPress Development</span>
-                    <span>Elementor & ACF Integration</span>
-                    <span>SEO Optimization & Site Speed</span>
-
-                    <span>Shopify Storefront & Admin API</span>
-                    <span>Liquid Templating & Theme Customization</span>
-                    <span>RESTful API Development & Integration</span>
-                    <span>OAuth, Webhooks & Token Management</span>
+                <div id="skills-container" class="skills-grouped">
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="services" class="py-5 bg-light">
+    <section id="services" class="py-5 bg-light" data-aos="fade-up">
         <div class="container">
             <h2 class="section-title text-center mb-5">Services</h2>
-            <div class="row g-4">
-
-                <div class="col-md-4">
-                    <div class="card h-100 shadow-sm border-0">
-                        <div class="card-body text-center">
-                            <i class="bi bi-code-slash display-4 text-custom mb-3"></i>
-                            <h5 class="card-title">Web Development</h5>
-                            <p class="card-text">
-                                Full-stack solutions using .NET, ASP.NET MVC, Angular, React, and JavaScript to deliver robust web applications. Includes RESTful API development, third-party integrations, and scalable microservices.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card h-100 shadow-sm border-0">
-                        <div class="card-body text-center">
-                            <i class="bi bi-brush display-4 text-custom mb-3"></i>
-                            <h5 class="card-title">UI/UX Design</h5>
-                            <p class="card-text">Designing responsive, accessible, and visually engaging interfaces that improve user experience.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card h-100 shadow-sm border-0">
-                        <div class="card-body text-center">
-                            <i class="bi bi-cloud-arrow-up display-4 text-custom mb-3"></i>
-                            <h5 class="card-title">Cloud & DevOps</h5>
-                            <p class="card-text">Deployment and optimization on Azure & AWS, with CI/CD pipelines and scalable infrastructure.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card h-100 shadow-sm border-0">
-                        <div class="card-body text-center">
-                            <i class="bi bi-wordpress display-4 text-custom mb-3"></i>
-                            <h5 class="card-title">WordPress Solutions</h5>
-                            <p class="card-text">Custom themes, plugins, Elementor, CPT & ACF integration, SEO optimization, and performance tuning.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card h-100 shadow-sm border-0">
-                        <div class="card-body text-center">
-                            <i class="bi bi-database-check display-4 text-custom mb-3"></i>
-                            <h5 class="card-title">Database Optimization</h5>
-                            <p class="card-text">Schema design, query tuning, and scalable database management for performance and efficiency.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card h-100 shadow-sm border-0">
-                        <div class="card-body text-center">
-                            <i class="bi bi-cart-check display-4 text-custom mb-3"></i>
-                            <h5 class="card-title">Shopify Integration</h5>
-                            <p class="card-text">
-                                Custom Shopify themes, Liquid templating, storefront setup, and Admin API integrations for products, orders, and customer workflows.
-                            </p>
-                        </div>
-                    </div>
-                </div>              
-
+            <div class="row g-4" id="services-container">
             </div>
         </div>
     </section>
 
-    <section id="experience" class="py-5 bg-light exp-mobile">
+    <section id="experience" class="py-5 bg-white exp-mobile" data-aos="fade-up">
         <div class="container">
             <h2 class="section-title">Work Experience</h2>
             <ul class="timeline-vertical">
@@ -226,78 +162,7 @@
         </div>
     </section>
 
-    <section id="projects" class="py-5 container">
-        <h2 class="section-title text-center mb-5">Freelance Projects</h2>
-        <div class="row g-4">
-
-            <!-- Project Card -->
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm project-card">
-                    <img src="https://phkubospa.cl/wp-content/uploads/2024/05/Kubo_Spa_Logo_main.jpg" class="card-img-top" alt="Kubo Spa" loading="lazy">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Kubo Spa</h5>
-                        <p class="card-text">Responsive spa website with online booking, services showcase, and elegant brand design.</p>
-                        <a href="https://phkubospa.cl/" target="_blank" class="btn btn-sm btn-outline-primary mt-auto">Live Demo</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Repeat for each project -->
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm project-card">
-                    <img src="https://www.ourmeasure.com/wp-content/uploads/2025/03/measure-homepage-pic-1-768x480.jpg" class="card-img-top" alt="Our Measure" loading="lazy">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Our Measure</h5>
-                        <p class="card-text">Business analytics platform with dashboards and insights for smarter decisions.</p>
-                        <a href="https://ourmeasure.com/" target="_blank" class="btn btn-sm btn-outline-primary mt-auto">Live Demo</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm project-card">
-                    <img src="https://global-solutions.net/wp-content/uploads/2021/04/gs_logo.png" class="card-img-top" alt="Global Solutions" loading="lazy">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Global Solutions</h5>
-                        <p class="card-text">Professional staffing and recruitment website for global workforce solutions.</p>
-                        <a href="https://global-solutions.net/" target="_blank" class="btn btn-sm btn-outline-primary mt-auto">Live Demo</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm project-card">
-                    <img src="https://www.channelrush.com/wp-content/uploads/2020/02/property-management-system.png" class="card-img-top" alt="Property Management System" loading="lazy">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Property Management System</h5>
-                            <p class="card-text">Custom system for real estate developer to manage property records and sales reporting.</p>
-                        </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm project-card">
-                    <img src="https://d3i71xaburhd42.cloudfront.net/08958e6cdbcf819a7259db792ea56708d0788c46/5-Figure1-1.png" class="card-img-top" alt="Swine Weight Prediction App" loading="lazy">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Swine Weight Prediction App</h5>
-                        <p class="card-text">Image-based prediction tool using computer vision and ML for livestock management.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm project-card">
-                    <img src="https://media.istockphoto.com/id/1373233627/vector/human-resources-information-system-hris-isometric-3d.jpg?s=612x612&w=0&k=20&c=PM4o39M2b7jD2dcBufAerrhYIvrMEqAb0jPeZlaJ1mY=" class="card-img-top" alt="HRIS for Teaching Staff" loading="lazy">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">HRIS for Teaching Staff</h5>
-                            <p class="card-text">Custom HR system for academic institutions to manage faculty records and payroll.</p>
-                        </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="experience" class="py-5 bg-light exp-web">
+    <section id="experience" class="py-5 bg-white exp-web">
         <div class="container">
             <h2 class="section-title text-center mb-5">Work Experience</h2>
             <ul class="timeline-horizontal">
@@ -359,26 +224,54 @@
         </div>
     </section>
 
-    <section id="contact" class="contact-section py-5">
+
+    <section id="projects" class="py-5 bg-light" data-aos="fade-up">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Freelance Projects</h2>
+            <div class="row g-4" id="project-container">
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="testimonials" class="py-5 bg-light" data-aos="fade-up">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Client Testimonials</h2>
+            <div class="row g-4" id="testimonials-container">
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="py-5 bg-white" data-aos="fade-up">
         <div class="container">
             <h2 class="section-title text-center mb-4">Let's Connect</h2>
-            <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <ul class="list-unstyled contact-list text-center">
-                    <li>
-                        <i class="bi bi-envelope-fill text-accent me-2"></i>
-                        <a href="mailto:jerzon.barbacena@gmail.com">jerzon.barbacena@gmail.com</a>
-                    </li>
-                    <li>
-                        <i class="bi bi-linkedin text-accent me-2"></i>
-                        <a href="https://www.linkedin.com/in/jerzonbarbacena" target="_blank">linkedin.com/in/jerzonbarbacena</a>
-                    </li>
-                    <li>
-                        <i class="bi bi-geo-alt-fill text-accent me-2"></i>
-                        Tayabas City, Quezon Province
-                    </li>
-                    </ul>
-                </div>
+            <div class="row align-items-start justify-content-center">
+            
+            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <form id="contact-form">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" name="name" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea name="message" rows="5" class="form-control" required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary px-4">Send Message</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-md-5 offset-md-1 mb-2" data-aos="fade-up" data-aos-delay="200">
+                <ul class="list-unstyled contact-list" id="contact-container"></ul>
+            </div>
+
             </div>
         </div>
     </section>
@@ -386,21 +279,32 @@
     <footer>
         <p>&copy; <span id="year"></span> Jerzon Barbacena. All rights reserved.</p>
     </footer>
-    <a href="https://"><i class="fab fa-linkedin fa-lg"></i></a>
-    <a href="#"><i class="fab fa-github fa-lg"></i></a>
-    <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-            popoverTriggerList.map(function(popoverTriggerEl) {
-                return new bootstrap.Popover(popoverTriggerEl)
-            })
-        });
-
-        document.getElementById("year").textContent = new Date().getFullYear();
+        const _0x3c6ffb=_0xe21f;(function(_0x95c255,_0x3f4d12){const _0x45bfe4=_0xe21f,_0x907421=_0x95c255();while(!![]){try{const _0x22308f=parseInt(_0x45bfe4(0x9e))/0x1*(-parseInt(_0x45bfe4(0xee))/0x2)+-parseInt(_0x45bfe4(0xe0))/0x3*(-parseInt(_0x45bfe4(0xaa))/0x4)+parseInt(_0x45bfe4(0x107))/0x5+parseInt(_0x45bfe4(0xae))/0x6+parseInt(_0x45bfe4(0xa0))/0x7*(-parseInt(_0x45bfe4(0x71))/0x8)+parseInt(_0x45bfe4(0xbe))/0x9+-parseInt(_0x45bfe4(0xcd))/0xa;if(_0x22308f===_0x3f4d12)break;else _0x907421['push'](_0x907421['shift']());}catch(_0x4441d1){_0x907421['push'](_0x907421['shift']());}}}(_0x4a51,0x62022),document[_0x3c6ffb(0x99)](_0x3c6ffb(0xdb),function(){const _0x25675d=_0x3c6ffb;var _0x3f47df=[][_0x25675d(0xc7)][_0x25675d(0xa2)](document['querySelectorAll'](_0x25675d(0xef)));_0x3f47df[_0x25675d(0xd4)](function(_0x53197b){return new bootstrap['Popover'](_0x53197b);});}),document[_0x3c6ffb(0xb4)](_0x3c6ffb(0xe4))[_0x3c6ffb(0xea)]=new Date()[_0x3c6ffb(0x9a)]());const projects=[{'title':'Kubo\x20Spa','description':_0x3c6ffb(0xc5),'image':_0x3c6ffb(0xc4),'link':_0x3c6ffb(0x9d)},{'title':'Our\x20Measure','description':_0x3c6ffb(0x101),'image':'https://www.ourmeasure.com/wp-content/uploads/2025/03/measure-homepage-pic-1-768x480.jpg','link':'https://ourmeasure.com/'},{'title':_0x3c6ffb(0x88),'description':_0x3c6ffb(0xb6),'image':_0x3c6ffb(0xb7),'link':_0x3c6ffb(0x95)},{'title':'Property\x20Management\x20System','description':_0x3c6ffb(0xac),'image':_0x3c6ffb(0x8c)},{'title':'Swine\x20Weight\x20Prediction\x20App','description':'Image-based\x20prediction\x20tool\x20using\x20computer\x20vision\x20and\x20ML\x20for\x20livestock\x20management.','image':_0x3c6ffb(0x103)},{'title':_0x3c6ffb(0x106),'description':_0x3c6ffb(0x100),'image':_0x3c6ffb(0xc1)}],container=document[_0x3c6ffb(0xaf)](_0x3c6ffb(0xdc));projects['forEach'](_0x297c7d=>{const _0x31bde5=_0x3c6ffb,_0x4b60de=document['createElement'](_0x31bde5(0x76));_0x4b60de[_0x31bde5(0xc2)]=_0x31bde5(0xb8),_0x4b60de[_0x31bde5(0xcc)]=_0x31bde5(0xdf)+_0x297c7d['image']+_0x31bde5(0xb2)+_0x297c7d[_0x31bde5(0xd5)]+_0x31bde5(0xf3)+_0x297c7d[_0x31bde5(0xd5)]+_0x31bde5(0xe6)+_0x297c7d[_0x31bde5(0x93)]+'</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+(_0x297c7d['link']?'<a\x20href=\x22'+_0x297c7d[_0x31bde5(0x82)]+_0x31bde5(0xbb):'')+'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20',container[_0x31bde5(0x8e)](_0x4b60de);});const skillGroups={'Frontend':[_0x3c6ffb(0x7e),_0x3c6ffb(0x84),_0x3c6ffb(0x7c),_0x3c6ffb(0x75),'Visual\x20Storytelling\x20&\x20UI/UX'],'Backend':[_0x3c6ffb(0xce),_0x3c6ffb(0xd9),_0x3c6ffb(0xf8),_0x3c6ffb(0xd0),_0x3c6ffb(0xb5)],'DevOps\x20&\x20Cloud':['Azure\x20&\x20AWS','CI/CD\x20Pipelines',_0x3c6ffb(0xcf)],'CMS\x20&\x20SEO':['WordPress\x20Development',_0x3c6ffb(0xde),_0x3c6ffb(0xb3)],'eCommerce\x20&\x20API':['Shopify\x20Storefront\x20&\x20Admin\x20API',_0x3c6ffb(0xd6),_0x3c6ffb(0x97),_0x3c6ffb(0x87)],'UX\x20&\x20Strategy':['User\x20Insights']},skillIcons={'Angular':'bi-lightning-fill','React':_0x3c6ffb(0xf1),'JavaScript':'bi-code-slash','PHP':_0x3c6ffb(0xa7),'Git\x20&\x20Azure\x20DevOps':_0x3c6ffb(0xb0),'WordPress\x20Development':_0x3c6ffb(0x85),'Shopify\x20Storefront\x20&\x20Admin\x20API':_0x3c6ffb(0x73),'SEO\x20Optimization\x20&\x20Site\x20Speed':'bi-speedometer2','Azure\x20&\x20AWS':'bi-cloud','RESTful\x20APIs\x20&\x20Microservices':_0x3c6ffb(0xf6),'Database\x20Management\x20&\x20Optimization':_0x3c6ffb(0xff),'CI/CD\x20Pipelines':_0x3c6ffb(0xb1),'OAuth,\x20Webhooks\x20&\x20Token\x20Management':_0x3c6ffb(0x89),'Layout\x20Optimization\x20&\x20Accessibility':_0x3c6ffb(0xcb),'Visual\x20Storytelling\x20&\x20UI/UX':'bi-palette','User\x20Insights':'bi-person-check','.NET\x20Ecosystem\x20(Core,\x20Framework,\x206+)':_0x3c6ffb(0xa8),'ASP.NET\x20MVC\x20&\x20Razor\x20View\x20Engine':_0x3c6ffb(0xd1),'Elementor\x20&\x20ACF\x20Integration':_0x3c6ffb(0x7b),'Liquid\x20Templating\x20&\x20Theme\x20Customization':_0x3c6ffb(0xf5),'RESTful\x20API\x20Development\x20&\x20Integration':_0x3c6ffb(0x104)},skillsContainer=document['getElementById'](_0x3c6ffb(0xba));Object[_0x3c6ffb(0x8f)](skillGroups)[_0x3c6ffb(0xe3)](([_0x24679c,_0x54e0c0],_0x317e6e)=>{const _0x508688=_0x3c6ffb,_0x427906=document[_0x508688(0xd3)](_0x508688(0x76));_0x427906[_0x508688(0xc2)]=_0x508688(0xa6),_0x427906[_0x508688(0xe7)](_0x508688(0xa1),_0x508688(0x86)),_0x427906[_0x508688(0xe7)](_0x508688(0xc9),_0x317e6e*0x64);const _0x1ae0b8=_0x54e0c0['map'](_0x4e048c=>{const _0x3793c5=_0x508688,_0x5564b0=skillIcons[_0x4e048c]||_0x3793c5(0xc6);return _0x3793c5(0x8d)+_0x4e048c+_0x3793c5(0xad)+_0x5564b0+_0x3793c5(0x108)+_0x4e048c+'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</span>';})[_0x508688(0xd2)]('');_0x427906[_0x508688(0xcc)]=_0x508688(0x9b)+_0x24679c+_0x508688(0xec)+_0x1ae0b8+'</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20',skillsContainer[_0x508688(0x8e)](_0x427906);});const tooltipTriggerList=[][_0x3c6ffb(0xc7)][_0x3c6ffb(0xa2)](document[_0x3c6ffb(0xa9)](_0x3c6ffb(0xc3)));tooltipTriggerList['forEach'](_0x1875c6=>new bootstrap[(_0x3c6ffb(0xca))](_0x1875c6)),document[_0x3c6ffb(0xa9)](_0x3c6ffb(0xf7))[_0x3c6ffb(0xe3)](_0x3e38f3=>{_0x3e38f3['addEventListener']('click',()=>{const _0x550405=_0xe21f,_0x1813a6=_0x3e38f3[_0x550405(0xda)](_0x550405(0x90));document[_0x550405(0xa9)]('.skill-group')[_0x550405(0xe3)](_0x138569=>{const _0xb02a56=_0x550405;_0x138569[_0xb02a56(0x109)][_0xb02a56(0xab)]=_0x1813a6===_0xb02a56(0x9c)||_0x138569[_0xb02a56(0xaf)]('.skill-category')[_0xb02a56(0xea)]===_0x1813a6?'block':_0xb02a56(0xf4);});});});const services=[{'title':'Web\x20Development','icon':_0x3c6ffb(0x9f),'description':_0x3c6ffb(0x105)},{'title':_0x3c6ffb(0xfb),'icon':_0x3c6ffb(0xc0),'description':_0x3c6ffb(0xf0)},{'title':'Cloud\x20&\x20DevOps','icon':_0x3c6ffb(0xa3),'description':_0x3c6ffb(0xa4)},{'title':_0x3c6ffb(0x72),'icon':'bi-wordpress','description':'Custom\x20themes,\x20plugins,\x20Elementor,\x20CPT\x20&\x20ACF\x20integration,\x20SEO\x20optimization,\x20and\x20performance\x20tuning.'},{'title':_0x3c6ffb(0x77),'icon':_0x3c6ffb(0x92),'description':'Schema\x20design,\x20query\x20tuning,\x20and\x20scalable\x20database\x20management\x20for\x20performance\x20and\x20efficiency.'},{'title':'Shopify\x20Integration','icon':_0x3c6ffb(0x8a),'description':_0x3c6ffb(0x83)}],servicesContainer=document[_0x3c6ffb(0xb4)](_0x3c6ffb(0xfa));services[_0x3c6ffb(0xe3)]((_0x4b0a96,_0x97fd7a)=>{const _0x365ee2=_0x3c6ffb,_0x29a1bd=document[_0x365ee2(0xd3)](_0x365ee2(0x76));_0x29a1bd[_0x365ee2(0xc2)]=_0x365ee2(0xb8),_0x29a1bd[_0x365ee2(0xe7)]('data-aos',_0x365ee2(0x86)),_0x29a1bd[_0x365ee2(0xe7)](_0x365ee2(0xc9),''+(_0x97fd7a+0x1)*0x64),_0x29a1bd[_0x365ee2(0xcc)]=_0x365ee2(0x98)+_0x4b0a96[_0x365ee2(0xd7)]+'\x20display-4\x20text-custom\x20mb-3\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h5\x20class=\x22card-title\x22>'+_0x4b0a96[_0x365ee2(0xd5)]+_0x365ee2(0xe6)+_0x4b0a96[_0x365ee2(0x93)]+'</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20',servicesContainer[_0x365ee2(0x8e)](_0x29a1bd);});const testimonials=[{'name':'Maria\x20Santos','role':'Spa\x20Owner,\x20Kubo\x20Spa','quote':_0x3c6ffb(0xc8),'image':_0x3c6ffb(0xbf)},{'name':_0x3c6ffb(0xe8),'role':'CEO,\x20Our\x20Measure','quote':_0x3c6ffb(0xed),'image':_0x3c6ffb(0x91)},{'name':_0x3c6ffb(0xe5),'role':'HR\x20Director,\x20Global\x20Solutions','quote':'Our\x20recruitment\x20portal\x20is\x20now\x20sleek,\x20scalable,\x20and\x20easy\x20to\x20manage.\x20Jerzon’s\x20work\x20exceeded\x20expectations.','image':_0x3c6ffb(0x7f)}],testimonialContainer=document[_0x3c6ffb(0xb4)](_0x3c6ffb(0x94));testimonials[_0x3c6ffb(0xe3)]((_0x4422df,_0x50dafd)=>{const _0x3d0e89=_0x3c6ffb,_0x5ed780=document[_0x3d0e89(0xd3)]('div');_0x5ed780[_0x3d0e89(0xc2)]=_0x3d0e89(0xb8),_0x5ed780[_0x3d0e89(0xe7)](_0x3d0e89(0xa1),_0x3d0e89(0x86)),_0x5ed780[_0x3d0e89(0xe7)]('data-aos-delay',''+(_0x50dafd+0x1)*0x64),_0x5ed780[_0x3d0e89(0xcc)]=_0x3d0e89(0xe2)+_0x4422df[_0x3d0e89(0x80)]+_0x3d0e89(0x74)+_0x4422df['name']+_0x3d0e89(0xbd)+_0x4422df['quote']+_0x3d0e89(0x8b)+_0x4422df[_0x3d0e89(0xfd)]+'</h6>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<small\x20class=\x22text-muted\x22>'+_0x4422df[_0x3d0e89(0xf2)]+'</small>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20',testimonialContainer[_0x3d0e89(0x8e)](_0x5ed780);});const contactItems=[{'icon':_0x3c6ffb(0x96),'label':_0x3c6ffb(0x81),'link':'mailto:jerzon.barbacena@gmail.com'},{'icon':_0x3c6ffb(0xfc),'label':_0x3c6ffb(0x102),'link':_0x3c6ffb(0xeb)},{'icon':'bi-geo-alt-fill','label':_0x3c6ffb(0x7d)}],contactContainer=document[_0x3c6ffb(0xb4)](_0x3c6ffb(0xdd));contactItems[_0x3c6ffb(0xe3)](_0x34e624=>{const _0x83552=_0x3c6ffb,_0x37c196=document[_0x83552(0xd3)]('li');_0x37c196[_0x83552(0xc2)]=_0x83552(0xf9),_0x37c196[_0x83552(0xcc)]=_0x83552(0xa5)+_0x34e624[_0x83552(0xd7)]+'\x20text-accent\x20me-2\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20'+(_0x34e624[_0x83552(0x82)]?_0x83552(0xe9)+_0x34e624[_0x83552(0x82)]+'\x22\x20target=\x22_blank\x22>'+_0x34e624[_0x83552(0x7a)]+_0x83552(0xd8):_0x34e624[_0x83552(0x7a)])+_0x83552(0xb9),contactContainer[_0x83552(0x8e)](_0x37c196);});const line1=_0x3c6ffb(0xfe),line2='Senior\x20Full-Stack\x20Developer',line3=_0x3c6ffb(0xe1);let i=0x0,j=0x0,k=0x0,current1='',current2='',current3='';function _0x4a51(){const _0x15ac49=['https://www.linkedin.com/in/jerzonbarbacena','</h6>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22skill-badges\x22>','The\x20analytics\x20dashboard\x20Jerzon\x20built\x20transformed\x20how\x20we\x20make\x20decisions.\x20Clean,\x20fast,\x20and\x20client-proof.','5716rJKRZw','[data-bs-toggle=\x22popover\x22]','Designing\x20responsive,\x20accessible,\x20and\x20visually\x20engaging\x20interfaces\x20that\x20improve\x20user\x20experience.','bi-cpu','role','\x22\x20loading=\x22lazy\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22card-body\x20d-flex\x20flex-column\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h5\x20class=\x22card-title\x22>','none','bi-droplet','bi-diagram-3','[data-filter]','PHP','mb-3','services-container','UI/UX\x20Design','bi-linkedin','name','Hello,\x20I\x27m\x20Jerzon\x20Barbacena','bi-hdd-network','Custom\x20HR\x20system\x20for\x20academic\x20institutions\x20to\x20manage\x20faculty\x20records\x20and\x20payroll.','Business\x20analytics\x20platform\x20with\x20dashboards\x20and\x20insights\x20for\x20smarter\x20decisions.','linkedin.com/in/jerzonbarbacena','https://d3i71xaburhd42.cloudfront.net/08958e6cdbcf819a7259db792ea56708d0788c46/5-Figure1-1.png','bi-plug','Full-stack\x20solutions\x20using\x20.NET,\x20ASP.NET\x20MVC,\x20Angular,\x20React,\x20and\x20JavaScript\x20to\x20deliver\x20robust\x20web\x20applications.\x20Includes\x20RESTful\x20API\x20development,\x20third-party\x20integrations,\x20and\x20scalable\x20microservices.','HRIS\x20for\x20Teaching\x20Staff','2365500YYfRsD','\x20me-1\x22></i>','style','8vbUfmQ','WordPress\x20Solutions','bi-bag-check','\x22\x20alt=\x22','Layout\x20Optimization\x20&\x20Accessibility','div','Database\x20Optimization','length','typewriter-line2','label','bi-puzzle','JavaScript','Tayabas\x20City,\x20Quezon\x20Province','Angular','./assets/images/testimonial-lara.jpg','image','jerzon.barbacena@gmail.com','link','Custom\x20Shopify\x20themes,\x20Liquid\x20templating,\x20storefront\x20setup,\x20and\x20Admin\x20API\x20integrations\x20for\x20products,\x20orders,\x20and\x20customer\x20workflows.','React','bi-wordpress','fade-up','OAuth,\x20Webhooks\x20&\x20Token\x20Management','Global\x20Solutions','bi-key','bi-cart-check','\x22</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h6\x20class=\x22mt-3\x20mb-0\x22>','https://www.channelrush.com/wp-content/uploads/2020/02/property-management-system.png','<span\x20class=\x22skill-badge\x22\x20data-bs-toggle=\x22tooltip\x22\x20title=\x22','appendChild','entries','data-filter','./assets/images/testimonial-james.jpg','bi-database-check','description','testimonials-container','https://global-solutions.net/','bi-envelope-fill','RESTful\x20API\x20Development\x20&\x20Integration','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22card\x20h-100\x20shadow-sm\x20border-0\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22card-body\x20text-center\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22bi\x20','addEventListener','getFullYear','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h6\x20class=\x22skill-category\x22>','all','https://phkubospa.cl/','139NWkgSg','bi-code-slash','2338140XscXWy','data-aos','call','bi-cloud-arrow-up','Deployment\x20and\x20optimization\x20on\x20Azure\x20&\x20AWS,\x20with\x20CI/CD\x20pipelines\x20and\x20scalable\x20infrastructure.','\x0a\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22bi\x20','skill-group','bi-filetype-php','bi-box','querySelectorAll','4aznRzA','display','Custom\x20system\x20for\x20real\x20estate\x20developer\x20to\x20manage\x20property\x20records\x20and\x20sales\x20reporting.','\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22','3724026FPRbtj','querySelector','bi-git','bi-arrow-repeat','\x22\x20class=\x22card-img-top\x22\x20alt=\x22','SEO\x20Optimization\x20&\x20Site\x20Speed','getElementById','Database\x20Management\x20&\x20Optimization','Professional\x20staffing\x20and\x20recruitment\x20website\x20for\x20global\x20workforce\x20solutions.','https://global-solutions.net/wp-content/uploads/2021/04/gs_logo.png','col-md-4','\x0a\x20\x20\x20\x20\x20\x20\x20\x20','skills-container','\x22\x20target=\x22_blank\x22\x20class=\x22btn\x20btn-sm\x20btn-outline-primary\x20mt-auto\x22>Live\x20Demo</a>','typewriter-line1','\x22\x20class=\x22rounded-circle\x20mx-auto\x20mt-4\x20mb-3\x22\x20width=\x2280\x22\x20height=\x2280\x22\x20loading=\x22lazy\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22card-body\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22card-text\x22>\x22','3304017ZDrPof','./assets/images/testimonial-maria.jpg','bi-brush','https://media.istockphoto.com/id/1373233627/vector/human-resources-information-system-hris-isometric-3d.jpg?s=612x612&w=0&k=20&c=PM4o39M2b7jD2dcBufAerrhYIvrMEqAb0jPeZlaJ1mY=','className','[data-bs-toggle=\x22tooltip\x22]','https://phkubospa.cl/wp-content/uploads/2024/05/Kubo_Spa_Logo_main.jpg','Responsive\x20spa\x20website\x20with\x20online\x20booking,\x20services\x20showcase,\x20and\x20elegant\x20brand\x20design.','bi-circle','slice','Jerzon\x20delivered\x20a\x20stunning\x20website\x20that\x20perfectly\x20reflects\x20our\x20brand.\x20Booking\x20rates\x20increased\x20by\x2030%\x20after\x20launch.','data-aos-delay','Tooltip','bi-eye','innerHTML','5595850TbkFEc','.NET\x20Ecosystem\x20(Core,\x20Framework,\x206+)','Git\x20&\x20Azure\x20DevOps','RESTful\x20APIs\x20&\x20Microservices','bi-window','join','createElement','map','title','Liquid\x20Templating\x20&\x20Theme\x20Customization','icon','</a>','ASP.NET\x20MVC\x20&\x20Razor\x20View\x20Engine','getAttribute','DOMContentLoaded','#projects\x20.row','contact-container','Elementor\x20&\x20ACF\x20Integration','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22card\x20h-100\x20shadow-sm\x20project-card\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22','694275jxspip','Let\x27s\x20Build\x20Something\x20Premium','\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22card\x20h-100\x20shadow-sm\x20border-0\x20text-center\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22','forEach','year','Lara\x20Mendoza','</h5>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22card-text\x22>','setAttribute','James\x20Tan','<a\x20href=\x22','textContent'];_0x4a51=function(){return _0x15ac49;};return _0x4a51();}function _0xe21f(_0x20adee,_0x386b2b){const _0x4a5115=_0x4a51();return _0xe21f=function(_0xe21f03,_0x279d8a){_0xe21f03=_0xe21f03-0x71;let _0x400258=_0x4a5115[_0xe21f03];return _0x400258;},_0xe21f(_0x20adee,_0x386b2b);}function typeLines(){const _0x5515e3=_0x3c6ffb,_0x94d25d=document[_0x5515e3(0xb4)]('typewriter-heading'),_0x52de42=document[_0x5515e3(0xb4)](_0x5515e3(0xbc)),_0x26b21e=document[_0x5515e3(0xb4)](_0x5515e3(0x79));if(i<line1[_0x5515e3(0x78)])current1+=line1[i++],_0x94d25d[_0x5515e3(0xea)]=current1,setTimeout(typeLines,0x50);else{if(j<line2['length'])current2+=line2[j++],_0x52de42[_0x5515e3(0xea)]=current2,setTimeout(typeLines,0x50);else k<line3['length']&&(current3+=line3[k++],_0x26b21e[_0x5515e3(0xea)]=current3,setTimeout(typeLines,0x50));}}typeLines();
     </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Jerzon",
+            "url": "https://barbzbqt.github.io/",
+            "jobTitle": "Senior Full Stack Developer",
+            "sameAs": [
+                "https://www.linkedin.com/in/jerzon",
+                "https://github.com/barbzbqt"
+            ]
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        function _0x193c(){const _0x2e437c=['toast-success','31czpNHC','contact-form','init','71772HfZWNO','</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20type=\x22button\x22\x20class=\x22btn-close\x20btn-close-white\x20me-2\x20m-auto\x22\x20data-bs-dismiss=\x22toast\x22\x20aria-label=\x22Close\x22></button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','div','appendChild','10655uffzqc','EmailJS\x20Error:','toast-error','addEventListener','reset','Message\x20sent\x20successfully!','33ZxVjFM','3162717ecVvdh','error','\x20border-0\x20show','aria-live','getElementById','8lhjDyX','pmrNieUSeT4KeVxwr','144qkUOdU','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22d-flex\x20bg-info\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22toast-body\x22>','role','toast\x20align-items-center\x20text-white\x20','remove','sendForm','1600450OHbPIa','success','preventDefault','setAttribute','5595744dkXosy','toast-container','71932iTltor','assertive','16434828gBkDFY','2658SWaMaV','Oops!\x20Something\x20went\x20wrong.','then'];_0x193c=function(){return _0x2e437c;};return _0x193c();}const _0x2cc4af=_0x6861;(function(_0x3cb0a5,_0x318456){const _0x3746e2=_0x6861,_0x3fcf0b=_0x3cb0a5();while(!![]){try{const _0xa34d76=-parseInt(_0x3746e2(0x1ea))/0x1*(-parseInt(_0x3746e2(0x1e3))/0x2)+parseInt(_0x3746e2(0x1d7))/0x3*(parseInt(_0x3746e2(0x1ed))/0x4)+parseInt(_0x3746e2(0x1f1))/0x5*(-parseInt(_0x3746e2(0x1e6))/0x6)+parseInt(_0x3746e2(0x1e1))/0x7+parseInt(_0x3746e2(0x1fd))/0x8*(-parseInt(_0x3746e2(0x1f8))/0x9)+-parseInt(_0x3746e2(0x1dd))/0xa*(-parseInt(_0x3746e2(0x1f7))/0xb)+-parseInt(_0x3746e2(0x1e5))/0xc;if(_0xa34d76===_0x318456)break;else _0x3fcf0b['push'](_0x3fcf0b['shift']());}catch(_0x4f2425){_0x3fcf0b['push'](_0x3fcf0b['shift']());}}}(_0x193c,0x90382),emailjs[_0x2cc4af(0x1ec)](_0x2cc4af(0x1fe)),document['getElementById'](_0x2cc4af(0x1eb))[_0x2cc4af(0x1f4)]('submit',function(_0x33bd1f){const _0x1a1d93=_0x2cc4af;_0x33bd1f[_0x1a1d93(0x1df)](),emailjs[_0x1a1d93(0x1dc)]('service_3ylk8f8','template_5nsg1hm',this)[_0x1a1d93(0x1e8)](()=>{const _0x5e1c28=_0x1a1d93;showToast(_0x5e1c28(0x1f6),_0x5e1c28(0x1de)),this[_0x5e1c28(0x1f5)]();},_0x32835e=>{const _0x195189=_0x1a1d93;console[_0x195189(0x1f9)](_0x195189(0x1f2),_0x32835e),showToast(_0x195189(0x1e7),_0x195189(0x1f9));});}));function _0x6861(_0x290152,_0x5e19d5){const _0x193c1a=_0x193c();return _0x6861=function(_0x686199,_0x41c545){_0x686199=_0x686199-0x1d7;let _0x2a5991=_0x193c1a[_0x686199];return _0x2a5991;},_0x6861(_0x290152,_0x5e19d5);}function showToast(_0x40f47b,_0x7f15dc=_0x2cc4af(0x1de)){const _0xb6edf6=_0x2cc4af,_0x3cc0c6=document['createElement'](_0xb6edf6(0x1ef));_0x3cc0c6['className']=_0xb6edf6(0x1da)+(_0x7f15dc===_0xb6edf6(0x1de)?_0xb6edf6(0x1e9):_0xb6edf6(0x1f3))+_0xb6edf6(0x1fa),_0x3cc0c6[_0xb6edf6(0x1e0)](_0xb6edf6(0x1d9),'alert'),_0x3cc0c6[_0xb6edf6(0x1e0)](_0xb6edf6(0x1fb),_0xb6edf6(0x1e4)),_0x3cc0c6[_0xb6edf6(0x1e0)]('aria-atomic','true'),_0x3cc0c6['innerHTML']=_0xb6edf6(0x1d8)+_0x40f47b+_0xb6edf6(0x1ee),document[_0xb6edf6(0x1fc)](_0xb6edf6(0x1e2))[_0xb6edf6(0x1f0)](_0x3cc0c6),setTimeout(()=>_0x3cc0c6[_0xb6edf6(0x1db)](),0xfa0);}
+    </script>
+    <div id="toast-container" class="position-fixed bottom-0 end-0 p-3" style="z-index: 1055;"></div>
 </body>
 
 </html>
