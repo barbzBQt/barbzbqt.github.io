@@ -1,4 +1,7 @@
-body { scroll-behavior: smooth !important; }
+body { 
+  font-family: 'Inter', sans-serif !important;
+  scroll-behavior: smooth !important;
+}
 
 .custom-navbar {
   backdrop-filter: blur(8px) !important;
@@ -9,6 +12,10 @@ body { scroll-behavior: smooth !important; }
 .custom-navbar .navbar-brand {
   font-size: 1.25rem !important;
   letter-spacing: 0.5px !important;
+}
+
+.text-dark {
+  color: #17182d !important; 
 }
 
 .custom-navbar .nav-link {
@@ -108,26 +115,26 @@ body { scroll-behavior: smooth !important; }
 }
 
 @keyframes colorPulse {
-  0%   { color: #FFD700; }   /* Gold */
-  25%  { color: #FFBF00; }   /* Amber */
-  50%  { color: #D4AF37; }   /* Champagne */
-  75%  { color: #F7E7CE; }   /* Champagne */
-  100% { color: #FFD700; }   /* Back to Gold */
+  0%   { color: #FFD700 !important; }   /* Gold */
+  25%  { color: #FFBF00 !important; }   /* Amber */
+  50%  { color: #D4AF37 !important; }   /* Champagne */
+  75%  { color: #F7E7CE !important; }   /* Champagne */
+  100% { color: #FFD700 !important; }   /* Back to Gold */
 }
 
 .hero h2 {
-  font-size: clamp(1.125rem, 2.5vw, 1.5rem);
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.85);
-  margin-bottom: 2rem;
+  font-size: clamp(1.125rem, 2.5vw, 1.5rem) !important;
+  font-weight: 400 !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+  margin-bottom: 2rem !important;
 }
 
 .hero .btn {
-  font-size: 0.9rem;
-  padding: 0.6rem 1.5rem;
-  border-radius: 50px;
-  transition: all 0.3s ease;
-  box-shadow: 0 0 0 transparent;
+  font-size: 0.9rem !important;
+  padding: 0.6rem 1.5rem !important;
+  border-radius: 50px !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 0 0 transparent !important;
 }
 
 .hero .btn:hover {
@@ -561,7 +568,7 @@ body { scroll-behavior: smooth !important; }
 }
 
 section {
-  scroll-margin-top: 120px; /* Adjust based on your navbar height */
+  scroll-margin-top: 120px !important; /* Adjust based on your navbar height */
 }
 
 section#about,
@@ -571,5 +578,11 @@ section#contact {
   padding: 60px 30px !important;
 }
 
-footer { background: #212529; color: white; padding: 20px 0; text-align: center; }
-footer a { color: #17182d !important; margin: 0 10px; }
+footer { background: #17182d; color: white; padding: 20px 0; text-align: center !important; }
+footer a { color: #17182d !important; margin: 0 10px !important; }
+
+#clients img {
+  max-height: 200px;
+  object-fit: contain;
+  width: 100%;
+}

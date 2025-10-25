@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio of Jerzon Barbacena - Full-Stack Developer specializing in .NET, Angular, JavaScript, and Cloud solutions. View my projects and services.">
-    <meta name="keywords" content="Senior Full Stack Developer, Portfolio, Software Engineer, Web Developer, Freelancer, Shopify, API Integration, UX Design">
+    <meta name="keywords" content="Senior Full Stack Developer, Portfolio, Software Engineer, Web Developer, Freelancer, Shopify, API Integration, UX Design, WordPress Developer, Elementor">
     <meta name="author" content="Jerzon Barbacena">
     <meta property="og:title" content="Jerzon | Full Stack Developer & Consultant" />
     <meta property="og:description" content="Explore modular dashboards, scalable APIs, and premium UX." />
@@ -19,6 +19,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3PPC9Z2EFN"></script>
     <script>
@@ -52,6 +53,7 @@
                 <ul class="navbar-nav gap-2">
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#clients">Clients</a></li>
                     <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
@@ -84,8 +86,8 @@
     </section>
 
     <section id="about" class="py-5 container" data-aos="fade-up">
-        <h2 class="section-title">About Me</h2>
-        <p>I’m a full stack developer driven by purpose and precision — crafting scalable web applications, cloud-native solutions, and refined UI/UX that elevate brands and solve real-world challenges. With 8+ years of hands-on experience, I don’t just write code — I architect digital experiences that perform, impress, and convert.</p>
+        <h2 class="mb-4 fw-bold text-uppercase text-dark text-center">About Me</h2>
+        <p class="mb-5 text-muted text-center">I’m a full stack developer with 8+ years of hands-on experience, blending purpose with precision to build scalable web applications, cloud-native systems, and refined UI/UX that elevate brands and solve real-world problems. I don’t just write code—I architect digital experiences that are performant, elegant, and conversion-driven.</p>
         <div class="row align-items-center">
             <div class="col-md-4 text-center">
                 <img src="./assets/images/profile-picture.jpg" class="profile-pic mb-4" alt="Profile Picture" loading="lazy">
@@ -109,11 +111,42 @@
         </div>
     </section>
 
-    <section id="services" class="py-5 bg-light" data-aos="fade-up">
-        <div class="container">
-            <h2 class="section-title text-center mb-5">Services</h2>
-            <div class="row g-4" id="services-container">
+    <section id="clients" class="py-5 bg-light border-top" data-aos="fade-up">
+        <div class="container text-center">
+            <h2 class="mb-4 fw-bold text-uppercase text-dark">Brands That Trust My Work</h2>
+            <p class="mb-5 text-muted">Collaborating with industry leaders who value precision, innovation, and timeless design—from digital pioneers to luxury homebuilders.</p>
+            
+            <div class="row justify-content-center align-items-center g-4 p-3">
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+                    <img src="./assets/images/gs_logo.png" alt="Global Solutions" class="img-fluid grayscale-hover" loading="lazy">
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+                    <img src="./assets/images/Measure-Logo-Website-1-1024x262.png" alt="Our Measure" class="img-fluid grayscale-hover" loading="lazy">
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+                    <img src="./assets/images/mindcore-logo.svg" alt="MindCore Technologies" class="img-fluid grayscale-hover" loading="lazy">
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+                    <img src="./assets/images/h-logo.png" alt="Hanrahan Consulting" class="img-fluid grayscale-hover" loading="lazy">
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+                    <img src="./assets/images/hearth-and-harbor-homes-logo.svg" alt="Hearth & Harbor Homes" class="img-fluid grayscale-hover" loading="lazy">
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+                    <img src="./assets/images/aire-socials-logo.png" alt="Aire Socials" class="img-fluid grayscale-hover" loading="lazy">
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+                    <img src="./assets/images/Kubo_Spa_Logo_main.jpg" alt="Kubo Spa" class="img-fluid grayscale-hover" loading="lazy">
+                </div>
             </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-5" data-aos="fade-up">
+        <div class="container">
+            <h2 class="mb-4 fw-bold text-uppercase text-dark text-center">Services</h2>
+            <p class="mb-5 text-muted text-center">I deliver full-stack solutions for brands that value precision, scalability, and visual impact.</p>
+            <div class="row g-4" id="services-container"></div>
         </div>
     </section>
 
@@ -224,15 +257,16 @@
     </section> -->
 
 
-    <section id="projects" class="py-5" data-aos="fade-up">
+    <section id="projects" class="py-5 bg-light" data-aos="fade-up">
         <div class="container">
-            <h2 class="section-title text-center mb-5">Projects</h2>
+            <h2 class="mb-4 fw-bold text-uppercase text-dark text-center">Projects</h2>
+            <p class="mb-5 text-muted text-center">Every project I build is driven by purpose and precision—whether it’s a modular dashboard, booking flow, or cloud-native platform. I blend technical depth with refined design to deliver scalable, conversion-focused solutions tailored to real-world needs.</p>
             <div class="row g-4" id="project-container">
             </div>
         </div>
     </section>
 
-    <section id="testimonials" class="py-5 bg-light" data-aos="fade-up">
+    <section id="testimonials" class="py-5" data-aos="fade-up">
         <div class="container">
             <h2 class="section-title text-center mb-5">Client Testimonials</h2>
             <div class="row g-4" id="testimonials-container">
@@ -240,9 +274,9 @@
         </div>
     </section>
 
-    <section id="contact" class="py-5 bg-light" data-aos="fade-up">
+    <section id="contact" class="py-5" data-aos="fade-up">
         <div class="container">
-            <h2 class="section-title text-center mb-4">Let's Connect</h2>
+            <h2 class="mb-4 fw-bold text-uppercase text-dark text-center">Let's Connect</h2>
             <div class="row align-items-start justify-content-center">
             
             <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
@@ -292,31 +326,31 @@
             {
                 title: "Hearth and Harbor Homes",
                 description: "Premium home rental platform with elegant branding, responsive layout, and seamless property showcase.",
-                image: "https://hearthandharborhomes.com/wp-content/uploads/2025/10/logo-72.svg",
+                image: "./assets/images/hearth-and-harbor-homes-logo.svg",
                 link: "https://hearthandharborhomes.com/"
             },
             {
                 title: "Aire Socials",
                 description: "Modern social media agency site featuring a sleek, responsive design, service highlights, and polished brand identity.",
-                image: "./assets/images/aire-socials.png",
+                image: "./assets/images/aire-socials-logo.png",
                 link: "https://airesocialsagency.com/"
             },
             {
                 title: "Kubo Spa",
                 description: "Responsive spa website with online booking, services showcase, and elegant brand design.",
-                image: "https://phkubospa.cl/wp-content/uploads/2024/05/Kubo_Spa_Logo_main.jpg",
+                image: "./assets/images/Kubo_Spa_Logo_main.jpg",
                 link: "https://phkubospa.cl/"
             },
             {
                 title: "Our Measure",
                 description: "Business analytics platform with dashboards and insights for smarter decisions.",
-                image: "https://www.ourmeasure.com/wp-content/uploads/2025/03/measure-homepage-pic-1-768x480.jpg",
+                image: "./assets/images/Measure-Logo-Website-1-1024x262.png",
                 link: "https://ourmeasure.com/"
             },
             {
                 title: "Global Solutions",
                 description: "Professional staffing and recruitment website for global workforce solutions.",
-                image: "https://global-solutions.net/wp-content/uploads/2021/04/gs_logo.png",
+                image: "./assets/images/gs_logo.png",
                 link: "https://global-solutions.net/"
             },
             {
