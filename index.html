@@ -57,6 +57,7 @@
                     <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faqs">FAQs</a></li>
                 </ul>
             </div>
         </div>
@@ -88,26 +89,57 @@
     <section id="about" class="bg-light py-5" data-aos="fade-up">
         <div class="container">
             <h2 class="mb-4 fw-bold text-uppercase text-dark text-center">About Me</h2>
-            <p class="mb-5 text-muted text-center">I’m a full stack developer with 8+ years of hands-on experience, blending purpose with precision to build scalable web applications, cloud-native systems, and refined UI/UX that elevate brands and solve real-world problems. I don’t just write code—I architect digital experiences that are performant, elegant, and conversion-driven.</p>
-            <div class="row align-items-center">
+            <p class="mb-5 text-muted text-justify">
+                I’m a full stack developer with 8+ years of hands-on experience building scalable web applications, modular CMS platforms, and custom eCommerce solutions. I specialize in clean architecture, rapid debugging, and client-ready delivery — from backend logic to frontend integration. Whether it's WordPress, Shopify, or custom stacks, I build systems that perform, scale, and empower.
+            </p>
+
+            <div class="row align-items-start">
                 <div class="col-md-4 text-center">
                     <img src="./assets/images/profile-picture.jpg" class="profile-pic mb-4" alt="Profile Picture" loading="lazy">
+                    <div class="row g-3 mb-4">
+                        <div class="col-sm-12" data-aos="fade-up">
+                            <div class="bg-white border rounded p-3 h-100 shadow-sm">
+                                <h6 class="fw-bold mb-1">Full Stack Development</h6>
+                                <p class="mb-0 small text-muted">I build fast, scalable web platforms using modern stacks — from backend logic to frontend integration.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12" data-aos="fade-up">
+                            <div class="bg-white border rounded p-3 h-100 shadow-sm">
+                                <h6 class="fw-bold mb-1">WordPress & Shopify Builds</h6>
+                                <p class="mb-0 small text-muted">Custom themes, Liquid logic, and modular CMS setups that empower clients to manage content with ease.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12" data-aos="fade-up">
+                            <div class="bg-white border rounded p-3 h-100 shadow-sm">
+                                <h6 class="fw-bold mb-1">Modular Codebase</h6>
+                                <p class="mb-0 small text-muted">Reusable components and schema-driven logic for fast iteration and long-term maintainability.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12" data-aos="fade-up">
+                            <div class="bg-white border rounded p-3 h-100 shadow-sm">
+                                <h6 class="fw-bold mb-1">Rapid Debugging</h6>
+                                <p class="mb-0 small text-muted">I isolate bugs fast, optimize performance, and deliver fixes that stick.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="col-md-8">
                     <div class="skills-toolbar d-flex align-items-center flex-wrap gap-3 mb-4 justify-content-start">
                         <h5 class="mb-0">Skills:</h5>
                         <div class="d-flex flex-wrap gap-2">
                             <button class="btn btn-outline-primary btn-sm" data-filter="all">All</button>
-                            <button class="btn btn-outline-primary btn-sm" data-filter="Frontend">Frontend</button>
-                            <button class="btn btn-outline-primary btn-sm" data-filter="Backend">Backend</button>
+                            <button class="btn btn-outline-primary btn-sm" data-filter="Frontend & UI">Frontend</button>
+                            <button class="btn btn-outline-primary btn-sm" data-filter="Backend & Architecture">Backend</button>
                             <button class="btn btn-outline-primary btn-sm" data-filter="DevOps & Cloud">DevOps & Cloud</button>
                             <button class="btn btn-outline-primary btn-sm" data-filter="CMS & SEO">CMS & SEO</button>
                             <button class="btn btn-outline-primary btn-sm" data-filter="eCommerce & API">eCommerce & API</button>
+                            <button class="btn btn-outline-primary btn-sm" data-filter="AI & Automation">AI & Automation</button>
+                            <button class="btn btn-outline-primary btn-sm" data-filter="UX & Strategy">UX & Strategy</button>
                         </div>
                     </div>
 
-                    <div id="skills-container" class="skills-grouped">
-                    </div>
+                    <div id="skills-container" class="skills-grouped"></div>
                 </div>
             </div>
         </div>
@@ -156,7 +188,9 @@
     <section id="services" class="py-5 bg-light" data-aos="fade-up">
         <div class="container">
             <h2 class="mb-4 fw-bold text-uppercase text-dark text-center">Services</h2>
-            <p class="mb-5 text-muted text-center">I deliver full-stack solutions for brands that value precision, scalability, and visual impact.</p>
+            <p class="mb-5 text-muted text-center">
+                I deliver full-stack solutions for brands that value precision, scalability, and clean architecture — from CMS setups to custom dashboards.
+            </p>
             <div class="row g-4" id="services-container"></div>
         </div>
     </section>
@@ -317,102 +351,126 @@
             </div>
         </div>
     </section>
-    <section id="faq" class="py-5" data-aos="fade-up">
+    <section id="faqs" class="py-5" data-aos="fade-up">
         <div class="container">
             <h2 class="mb-4 fw-bold text-uppercase text-dark text-center">Frequently Asked Questions</h2>
             <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq1">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                            What services do you offer?
+                        </button>
+                    </h2>
+                    <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            I offer full-stack development, WordPress and Shopify builds, scraping workflows, database optimization, and modular dashboards.
+                        </div>
+                    </div>
+                </div>
 
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="faq1">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
-                    What services do you offer?
-                </button>
-                </h2>
-                <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-                <div class="accordion-body">
-                    I offer full-stack development, UI/UX design, WordPress, Shopify, scraping workflows, and modular dashboards.
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                        What technologies do you use?
+                    </button>
+                    </h2>
+                    <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        My stack includes .NET, React, Angular, MS SQL, PHP, MySQL, HTML, Bootstrap, WordPress, Shopify (Liquid), and custom JavaScript for dynamic features.
+                    </div>
+                    </div>
                 </div>
-                </div>
-            </div>
 
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="faq2">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
-                    What technologies do you use?
-                </button>
-                </h2>
-                <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                <div class="accordion-body">
-                    My stack includes .NET, React, Angular, MS SQL, PHP, MySQL, HTML, Bootstrap, WordPress, Shopify (Liquid), and custom JS for dynamic features.
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                            How do you price your projects?
+                        </button>
+                    </h2>
+                    <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            I offer flat-rate, milestone-based, and hourly pricing depending on project scope and client preference.
+                        </div>
+                    </div>
                 </div>
-                </div>
-            </div>
 
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="faq3">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
-                    How do you price your projects?
-                </button>
-                </h2>
-                <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                <div class="accordion-body">
-                    I offer flat-rate, project-based, milestone-based, and hourly pricing depending on scope and client preference.
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq4">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+                            Do you require a deposit?
+                        </button>
+                    </h2>
+                    <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes — I typically require a 30%–50% deposit after the first milestone or initial setup is successfully delivered.
+                        </div>
+                    </div>
                 </div>
-                </div>
-            </div>
 
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="faq4">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
-                    Do you require a deposit?
-                </button>
-                </h2>
-                <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                <div class="accordion-body">
-                    Yes — I typically require a 30%–50% deposit after the first milestone or initial setup is successfully delivered.
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq5">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5">
+                            What’s your typical turnaround time?
+                        </button>
+                    </h2>
+                    <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Most projects take 2–4 weeks depending on scope. I deliver in scoped milestones with rapid iteration.
+                        </div>
+                    </div>
                 </div>
-                </div>
-            </div>
 
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="faq5">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5">
-                    What’s your typical turnaround time?
-                </button>
-                </h2>
-                <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                <div class="accordion-body">
-                    Most projects take 2–4 weeks depending on scope. I deliver in scoped milestones with rapid iteration.
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq6">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6">
+                            Do you offer revisions?
+                        </button>
+                    </h2>
+                    <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes — I iterate rapidly based on client feedback and guarantee client-proof delivery. Most packages include 1–3 rounds of revisions.
+                        </div>
+                    </div>
                 </div>
-                </div>
-            </div>
 
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="faq6">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6">
-                    Do you offer revisions?
-                </button>
-                </h2>
-                <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                <div class="accordion-body">
-                    Yes — I iterate rapidly based on client feedback and guarantee client-proof delivery.
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq7">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7">
+                            Do you provide source code and credentials?
+                        </button>
+                    </h2>
+                    <div id="collapse7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Always. I turn over all assets upon completion for full client control — including source code, credentials, and documentation.
+                        </div>
+                    </div>
                 </div>
-                </div>
-            </div>
 
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="faq7">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7">
-                    Do you provide source code and credentials?
-                </button>
-                </h2>
-                <div id="collapse7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                <div class="accordion-body">
-                    Always. I turn over all assets upon completion for full client control.
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq8">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8">
+                            How do we start working together?
+                        </button>
+                    </h2>
+                    <div id="collapse8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Just send me a message with your goals or project scope. I’ll reply with a breakdown, timeline, and next steps. We can kick off with a discovery call or jump straight into development.
+                        </div>
+                    </div>
                 </div>
-                </div>
-            </div>
 
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq9">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9">
+                            Can I edit the site myself after launch?
+                        </button>
+                    </h2>
+                    <div id="collapse9" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Absolutely. I build modular, client-editable layouts using WordPress (Elementor, CPT, ACF) and Shopify (Liquid templates, metafields). You’ll have full control with zero confusion.
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
