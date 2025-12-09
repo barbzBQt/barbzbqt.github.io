@@ -627,3 +627,28 @@ footer a { color: #17182d !important; margin: 0 10px !important; }
     right: 16px;
   }
 }
+
+.timeline {
+    position: relative;
+    margin: 0 auto;
+    padding-left: 20px;
+    border-left: 2px solid #dee2e6;
+  }
+  .timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+  }
+  .timeline-dot {
+    position: absolute;
+    left: -9px;
+    top: 5px;
+    width: 16px;
+    height: 16px;
+    background: #17182d;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 2px rgba(13,110,253,0.2);
+  }
+  .timeline-content {
+    padding-left: 1rem;
+  }
