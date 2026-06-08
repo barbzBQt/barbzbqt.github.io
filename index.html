@@ -1,507 +1,507 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Jerzon Barbacena - Full-Stack Developer specializing in .NET, Angular, JavaScript, and Cloud solutions. View my projects and services.">
-    <meta name="keywords" content="Senior Full Stack Developer, Portfolio, Software Engineer, Web Developer, Freelancer, Shopify, API Integration, UX Design, WordPress Developer, Elementor">
-    <meta name="author" content="Jerzon Barbacena">
-    <meta property="og:title" content="Jerzon | Full Stack Developer & Consultant" />
-    <meta property="og:description" content="Explore modular dashboards, scalable APIs, and premium UX." />
-    <meta property="og:image" content="https://barbzbqt.github.io/preview.jpg" />
-    <meta property="og:url" content="https://barbzbqt.github.io/" />
-    <meta property="og:type" content="website" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Jerzon Barbacena • Precision-Driven Software Engineering</title>
+    <meta name="description" content="Jerzon Barbacena specializes in software development, full-stack engineering, and enterprise automation with a focus on precision and control.">
 
-    <title>Jerzon Barbacena | Professional Profile</title>
+    <!-- SEO Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://barbzbqt.github.io/">
 
-    <link href="./assets/css/style.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://barbzbqt.github.io/">
+    <meta property="og:title" content="Jerzon Barbacena • Precision-Driven Software Engineering">
+    <meta property="og:description" content="Specializing in full-stack engineering and enterprise automation with a focus on precision and control.">
+    <meta property="og:image" content="https://barbzbqt.github.io/preview.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://barbzbqt.github.io/">
+    <meta property="twitter:title" content="Jerzon Barbacena • Precision-Driven Software Engineering">
+    <meta property="twitter:description" content="Specializing in full-stack engineering and enterprise automation with a focus on precision and control.">
+    <meta property="twitter:image" content="https://barbzbqt.github.io/preview.jpg">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png">
+    <link rel="manifest" href="./assets/images/site.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0B1F3A',
+                        cyan: '#1e3a8a',
+                        slate: { 850: '#112240' },
+                        softWhite: '#F8FAFC',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                        mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas'],
+                    }
+                }
+            }
+        }
+    </script>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3PPC9Z2EFN"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3PPC9Z2EFN');</script>
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-3PPC9Z2EFN');
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Jerzon Barbacena",
+      "url": "https://barbzbqt.github.io/",
+      "jobTitle": "Senior Full Stack Developer",
+      "description": "Jerzon Barbacena specializes in software development, full-stack engineering, and enterprise automation with a focus on precision and control.",
+      "sameAs": [
+        "https://github.com/barbzbqt",
+        "https://linkedin.com/in/jerzonbarbacena"
+      ]
+    }
     </script>
 
     <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-    <link rel="manifest" href="./assets/images/site.webmanifest">
+    <style>
+        ::selection { background-color: #1e3a8a; color: #ffffff; }
+        .hero-line-1 { stroke-dasharray: 200; stroke-dashoffset: 200; animation: lineDraw 1.2s cubic-bezier(0.19, 1, 0.22, 1) forwards; }
+        .hero-node { opacity: 0; transform-origin: center; animation: nodePop 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.2s forwards; }
+        .hero-line-2 { stroke-dasharray: 200; stroke-dashoffset: 200; animation: lineDraw 1.5s cubic-bezier(0.19, 1, 0.22, 1) 1.5s forwards; }
+        .hero-node-pulse { opacity: 0; transform: scale(1); transform-origin: 200px 150px; animation: pulseNode 2s infinite 1.7s; }
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 56px;
+            height: 56px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+            animation: pulse-wa 2s infinite;
+        }
+        .whatsapp-float:hover { transform: scale(1.1); background-color: #20BA56; }
+        @keyframes pulse-wa {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+        @keyframes lineDraw { to { stroke-dashoffset: 0; } }
+        @keyframes nodePop { to { opacity: 1; transform: scale(1); } }
+        @keyframes pulseNode { 0% { opacity: 0; transform: scale(0.8); } 50% { opacity: 0.5; } 100% { opacity: 0; transform: scale(1.8); } }
+    </style>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg fixed-top shadow-sm custom-navbar">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="#home">
-                <img src="./assets/images/logo.svg" alt="Jerzon Barbacena Logo" width="32" height="32" class="me-2">
-                <span class="navbar-brand fw-bold text-white">Jerzon Barbacena</span>
+<body class="bg-white text-navy font-sans antialiased selection:bg-cyan selection:text-white">
+    <!-- Background System Lines -->
+    <div class="fixed inset-0 pointer-events-none z-0 opacity-[0.03]">
+        <div class="absolute inset-0" style="background-image: linear-gradient(#0B1F3A 1px, transparent 1px), linear-gradient(90deg, #0B1F3A 1px, transparent 1px); background-size: 100px 100px;"></div>
+    </div>
+
+    <header class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-navy/5">
+        <nav class="container mx-auto px-6 h-20 flex justify-between items-center">
+            <a class="flex items-center gap-3 group" href="#home">
+                <img src="./assets/images/logo.svg" alt="Jerzon Barbacena Logo" class="h-8 w-auto group-hover:opacity-80 transition-opacity">
+                <span class="font-display font-bold text-xl tracking-tighter uppercase">Jerzon<span class="text-cyan">Barbacena</span></span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav gap-2">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#clients">Clients</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#faqs">FAQs</a></li>
-                </ul>
+            <div class="hidden lg:flex items-center gap-10 font-mono text-[10px] uppercase tracking-[0.2em]">
+                <a href="#services" class="hover:text-cyan transition-colors">Services</a>
+                <a href="#tech" class="hover:text-cyan transition-colors">Stack</a>
+                <a href="#projects" class="hover:text-cyan transition-colors">Projects</a>
+                <a href="#process" class="hover:text-cyan transition-colors">Workflow</a>
+                <a href="#contact" class="border border-navy px-5 py-2 hover:bg-cyan hover:border-cyan hover:text-white transition-all">Execute_Inquiry</a>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <section id="home" class="hero text-center" data-aos="fade-up">
-        <video autoplay muted loop playsinline class="hero-video">
-            <source src="./assets/videos/hero-bg.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-
-        <div class="hero-overlay">
-            <div class="container">
-                <h1 class="display-5 fw-bold mb-3 display-web">Hello, I'm Jerzon Barbacena</h1>
-                <h1 class="display-5 fw-bold mb-0 display-mobile">Hello, I'm</h1>
-                <h1 class="display-5 fw-bold mb-3 display-mobile-name">Jerzon Barbacena</h1>
-                <h2 class="lead text-light mb-4">
-                    Senior Full Stack Developer<br>
-                    From concept to code — I build premium, scalable experiences.
-                </h2>
-                <div class="d-flex justify-content-center flex-wrap gap-2">
-                    <a href="#contact" class="btn btn-light btn-lg px-4">Let's Connect</a>
-                    <a href="./assets/documents/JBarbacenaCV.pdf" class="btn btn-outline-warning btn-lg px-4" target="_blank">Download Resume</a>
+    <main class="relative z-10">
+        <!-- Hero Section -->
+        <section id="home" class="pt-48 pb-32 border-b border-navy/5 overflow-hidden">
+            <div class="container mx-auto px-6">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div class="max-w-2xl">
+                        <div class="flex items-center gap-3 mb-8">
+                            <div class="h-px w-10 bg-cyan"></div>
+                            <span class="font-mono text-[10px] text-cyan uppercase tracking-[0.4em]">Full Stack Developer</span>
+                        </div>
+                        <h1 class="font-display text-5xl md:text-7xl font-bold leading-[1.05] mb-8 tracking-tight">
+                            Precision-Grade <br/>
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-navy via-navy to-cyan">Software Systems.</span>
+                        </h1>
+                        <p class="text-lg text-navy/60 max-w-lg mb-12 leading-relaxed font-light">
+                            From concept to code — I build premium, scalable experiences. I build systems that drive efficiency and precision at scale.
+                        </p>
+                        <div class="flex flex-wrap gap-6">
+                            <a href="#contact" class="bg-navy text-white px-8 py-4 font-bold text-sm tracking-widest uppercase hover:bg-cyan hover:text-white hover:-translate-y-1 hover:shadow-lg transition-all">
+                                Start_Project
+                            </a>
+                            <a href="./assets/documents/JBarbacenaCV.pdf" target="_blank" class="group flex items-center gap-3 font-mono text-[11px] uppercase tracking-widest hover:text-cyan transition-colors">
+                                Download_CV
+                                <span class="group-hover:translate-x-1 transition-transform">→</span>
+                            </a>
+                            <a href="#services" class="group flex items-center gap-3 font-mono text-[11px] uppercase tracking-widest hover:text-cyan transition-colors">
+                                View_Capabilities
+                                <span class="group-hover:translate-x-1 transition-transform">→</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="relative flex justify-center items-center h-[300px] lg:h-[400px]">
+                        <svg width="100%" height="100%" viewBox="0 0 400 300" class="max-w-md">
+                            <path d="M 50 150 H 180" stroke="#0B1F3A" stroke-width="2" fill="none" class="hero-line-1" />
+                            <circle cx="200" cy="150" r="6" stroke="#1e3a8a" stroke-width="2" fill="white" class="hero-node" />
+                            <circle cx="200" cy="150" r="12" stroke="#1e3a8a" stroke-width="1" fill="none" class="hero-node-pulse" />
+                            <path d="M 220 150 H 350" stroke="#1e3a8a" stroke-width="2" fill="none" class="hero-line-2" />
+                            <path d="M 210 140 L 250 100 H 350" stroke="#0B1F3A" stroke-width="1" opacity="0.3" fill="none" class="hero-line-3" />
+                        </svg>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="about" class="bg-light py-5" data-aos="fade-up">
-        <div class="container">
-            <h2 class="mb-4 fw-bold text-uppercase text-dark text-center">About Me</h2>
-            <p class="mb-5 text-muted text-justify">
-                I'm a versatile Senior Full Stack Developer with 8+ years of experience building scalable, secure, and polished applications. Skilled in .NET Core/MVC/API, Angular, JavaScript, SQL, and creative platforms like WordPress and Shopify. Adept at cloud solutions (Azure, AWS), RESTful API design, and responsive UI/UX, with a proven track record of delivering audit-grade systems and engaging consumer-facing sites.
-            </p>
+        <!-- Brands -->
+        <section id="clients" class="py-32 border-b border-navy/5 bg-softWhite/50">
+            <div class="container mx-auto px-6">
+                <div class="max-w-2xl mb-16">
+                    <span class="font-mono text-[10px] text-cyan uppercase tracking-[0.4em] block mb-4">Strategic Partners</span>
+                    <h2 class="font-display text-4xl font-bold tracking-tight text-navy">Trusted by Industry Leaders</h2>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-y-20 gap-x-16 items-center">
+                    <img src="./assets/images/mindcore-logo.svg" alt="MindCore" class="h-20 mx-auto w-full object-contain">
+                    <img src="./assets/images/hearth-and-harbor-homes-logo.svg" alt="H&H Homes" class="h-20 mx-auto w-full object-contain">
+                    <img src="./assets/images/gs_logo.png" alt="Global Solutions" class="h-24 mx-auto w-full object-contain">
+                    <img src="./assets/images/Measure-Logo-Website-1-1024x262.png" alt="Our Measure" class="h-20 mx-auto w-full object-contain">
+                    <img src="./assets/images/aire-socials-logo.png" alt="Aire Socials" class="h-28 mx-auto w-full object-contain">
+                    <img src="./assets/images/family-law-attorney-site-logo.png" alt="Family Law Attorney" class="h-24 mx-auto w-full object-contain">
+                    <img src="./assets/images/Kubo_Spa_Logo_main.jpg" alt="Kubo Spa" class="h-32 mx-auto w-full object-contain">
+                    <img src="./assets/images/pivotal-solutions-logo.webp" alt="Pivotal Solutions" class="h-20 mx-auto w-full object-contain">
+                    <img src="./assets/images/crowned-saints-logo.webp" alt="Crowned Saints" class="h-40 mx-auto w-full object-contain">
+                    <img src="./assets/images/SDFLogo-150x94.png" alt="SDF Media" class="h-24 mx-auto w-full object-contain">
+                </div>
+            </div>
+        </section>
 
-            <div class="row align-items-start">
-                <div class="col-md-4 text-center">
-                    <img src="./assets/images/profile-picture.jpg" class="profile-pic mb-4" alt="Profile Picture" loading="lazy">
-                    <div class="row g-3 mb-4">
-                        <div class="col-sm-12" data-aos="fade-up">
-                            <div class="bg-white border rounded p-3 h-100 shadow-sm">
-                                <h6 class="fw-bold mb-1">Full Stack Development</h6>
-                                <p class="mb-0 small text-muted">I build fast, scalable web platforms using modern stacks — from backend logic to frontend integration.</p>
+        <!-- Services Grid -->
+        <section id="services" class="py-32 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+                    <div class="max-w-2xl">
+                        <span class="font-mono text-[10px] text-cyan uppercase tracking-[0.4em] block mb-4">01 // Capabilities</span>
+                        <h2 class="font-display text-4xl font-bold tracking-tight">Full-Cycle Engineering</h2>
+                    </div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="font-mono text-[9px] text-navy/30 uppercase">Operational Status: Nominal</span>
+                        <div class="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></div>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-navy/5 border border-navy/5" id="services-container">
+                    <!-- Services will be injected here with Tailwind styling -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack -->
+        <section id="tech" class="py-32 bg-white border-t border-navy/5">
+            <div class="container mx-auto px-6">
+                <div class="max-w-2xl mb-20">
+                    <span class="font-mono text-[10px] text-cyan uppercase tracking-[0.4em] block mb-4">02 // Tech Stack</span>
+                    <h2 class="font-display text-4xl font-bold tracking-tight text-navy">Enterprise-Grade Tooling</h2>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-12">
+                    <div>
+                        <h4 class="font-display font-bold text-sm uppercase tracking-widest mb-6 flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 bg-cyan"></span>
+                            Core Stack
+                        </h4>
+                        <div class="flex flex-wrap gap-2" id="tech-core"></div>
+                    </div>
+                    <div>
+                        <h4 class="font-display font-bold text-sm uppercase tracking-widest mb-6 flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 bg-cyan"></span>
+                            Infrastructure
+                        </h4>
+                        <div class="flex flex-wrap gap-2" id="tech-cloud"></div>
+                    </div>
+                    <div>
+                        <h4 class="font-display font-bold text-sm uppercase tracking-widest mb-6 flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 bg-cyan"></span>
+                            Architecture
+                        </h4>
+                        <div class="flex flex-wrap gap-2" id="tech-tools"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="py-32 bg-softWhite">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+                    <div class="max-w-2xl">
+                        <span class="font-mono text-[10px] text-cyan uppercase tracking-[0.4em] block mb-4">03 // Portfolio</span>
+                        <h2 class="font-display text-4xl font-bold tracking-tight">Technical Implementations</h2>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-2 font-mono text-[9px] uppercase tracking-widest" id="project-filters">
+                        <button class="project-filter bg-navy text-white px-4 py-2" data-filter="all">All_Systems</button>
+                        <button class="project-filter border border-navy/10 px-4 py-2 hover:bg-navy/5 transition-colors" data-filter="wordpress">WordPress</button>
+                        <button class="project-filter border border-navy/10 px-4 py-2 hover:bg-navy/5 transition-colors" data-filter="full-stack">Full-Stack</button>
+                        <button class="project-filter border border-navy/10 px-4 py-2 hover:bg-navy/5 transition-colors" data-filter="research">Research / ML</button>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="project-container">
+                    <!-- Projects will be injected here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Workflow / Process -->
+        <section id="process" class="py-32 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="max-w-3xl mb-24">
+                    <span class="font-mono text-[10px] text-cyan uppercase tracking-[0.4em] block mb-4">04 // Workflow</span>
+                    <h2 class="font-display text-4xl font-bold tracking-tight">Structured Problem Solving</h2>
+                </div>
+
+                <div class="grid md:grid-cols-4 gap-8">
+                    <div class="relative group">
+                        <div class="font-mono text-cyan text-[10px] mb-6">01_DISCOVERY</div>
+                        <div class="w-full h-px bg-navy/10 mb-6 relative">
+                            <div class="absolute right-0 top-1/2 -translate-y-1/2 w-1.5 h-1.5 border border-navy transition-colors group-hover:bg-cyan"></div>
+                        </div>
+                        <h5 class="font-bold mb-4 uppercase tracking-tighter text-sm">System Audit</h5>
+                        <p class="text-[11px] text-navy/50 leading-relaxed uppercase">Stakeholder requirements gathering & current state analysis.</p>
+                    </div>
+                    <div class="relative group">
+                        <div class="font-mono text-cyan text-[10px] mb-6">02_ARCHITECTURE</div>
+                        <div class="w-full h-px bg-navy/10 mb-6 relative">
+                            <div class="absolute right-0 top-1/2 -translate-y-1/2 w-1.5 h-1.5 border border-navy transition-colors group-hover:bg-cyan"></div>
+                        </div>
+                        <h5 class="font-bold mb-4 uppercase tracking-tighter text-sm">Design Blueprint</h5>
+                        <p class="text-[11px] text-navy/50 leading-relaxed uppercase">Technical planning, dependency mapping & infrastructure design.</p>
+                    </div>
+                    <div class="relative group">
+                        <div class="font-mono text-cyan text-[10px] mb-6">03_EXECUTION</div>
+                        <div class="w-full h-px bg-navy/10 mb-6 relative">
+                            <div class="absolute right-0 top-1/2 -translate-y-1/2 w-1.5 h-1.5 border border-navy transition-colors group-hover:bg-cyan animate-pulse"></div>
+                        </div>
+                        <h5 class="font-bold mb-4 uppercase tracking-tighter text-sm">Precision Build</h5>
+                        <p class="text-[11px] text-navy/50 leading-relaxed uppercase">Engineering phased delivery with strict QA and unit testing.</p>
+                    </div>
+                    <div class="relative group">
+                        <div class="font-mono text-cyan text-[10px] mb-6">04_OPTIMIZATION</div>
+                        <div class="w-full h-px bg-navy/10 mb-6 relative">
+                            <div class="absolute right-0 top-1/2 -translate-y-1/2 w-1.5 h-1.5 border border-navy transition-colors group-hover:bg-cyan"></div>
+                        </div>
+                        <h5 class="font-bold mb-4 uppercase tracking-tighter text-sm">Scale & Refine</h5>
+                        <p class="text-[11px] text-navy/50 leading-relaxed uppercase">Continuous performance tuning & data-driven system scaling.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-32 bg-white border-t border-navy/5">
+            <div class="container mx-auto px-6">
+                <div class="grid lg:grid-cols-2 gap-24 items-start">
+                    <div>
+                        <span class="font-mono text-[10px] text-cyan uppercase tracking-[0.4em] block mb-4">05 // Contact</span>
+                        <h2 class="font-display text-4xl font-bold mb-8 tracking-tight uppercase">Initialize_Inquiry</h2>
+                        <p class="text-navy/60 leading-relaxed mb-12">Submit your technical requirements or system challenges. We provide preliminary assessments and project roadmaps within 24 hours.</p>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-center gap-4">
+                                <div class="w-10 h-10 border border-navy/10 flex items-center justify-center font-mono text-cyan text-xs">E</div>
+                                <span class="font-mono text-xs tracking-widest text-navy/70">jerzon.barbacena@gmail.com</span>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="w-10 h-10 border border-navy/10 flex items-center justify-center font-mono text-cyan text-xs">L</div>
+                                <span class="font-mono text-xs tracking-widest text-navy/70">Tayabas // Philippines</span>
                             </div>
                         </div>
-                        <div class="col-sm-12" data-aos="fade-up">
-                            <div class="bg-white border rounded p-3 h-100 shadow-sm">
-                                <h6 class="fw-bold mb-1">WordPress & Shopify Builds</h6>
-                                <p class="mb-0 small text-muted">Custom themes, Liquid logic, and modular CMS setups that empower clients to manage content with ease.</p>
+                    </div>
+                    
+                    <div class="bg-softWhite p-10 border border-navy/5 relative">
+                        <div class="absolute -top-1 -left-1 w-6 h-6 border-t border-l border-cyan"></div>
+                        <form id="contactForm" class="space-y-8">
+                            <input type="hidden" name="time">
+                            <div>
+                                <label class="block font-mono text-[9px] uppercase tracking-[0.2em] mb-3 text-navy/40">User_Name</label>
+                                <input type="text" name="name" required class="w-full bg-transparent border-b border-navy/10 py-2 focus:border-cyan outline-none transition-colors font-mono text-xs">
                             </div>
-                        </div>
-                        <div class="col-sm-12" data-aos="fade-up">
-                            <div class="bg-white border rounded p-3 h-100 shadow-sm">
-                                <h6 class="fw-bold mb-1">Modular Codebase</h6>
-                                <p class="mb-0 small text-muted">Reusable components and schema-driven logic for fast iteration and long-term maintainability.</p>
+                            <div>
+                                <label class="block font-mono text-[9px] uppercase tracking-[0.2em] mb-3 text-navy/40">Email_Address</label>
+                                <input type="email" name="email" required class="w-full bg-transparent border-b border-navy/10 py-2 focus:border-cyan outline-none transition-colors font-mono text-xs">
                             </div>
-                        </div>
-                        <div class="col-sm-12" data-aos="fade-up">
-                            <div class="bg-white border rounded p-3 h-100 shadow-sm">
-                                <h6 class="fw-bold mb-1">Rapid Debugging</h6>
-                                <p class="mb-0 small text-muted">I isolate bugs fast, optimize performance, and deliver fixes that stick.</p>
+                            <div>
+                                <label class="block font-mono text-[9px] uppercase tracking-[0.2em] mb-3 text-navy/40">Project_Brief</label>
+                                <textarea name="message" rows="4" required class="w-full bg-transparent border border-navy/10 p-4 focus:border-cyan outline-none transition-colors font-mono text-xs resize-none"></textarea>
                             </div>
-                        </div>
+                            <button type="submit" class="w-full bg-navy text-white py-4 font-bold uppercase tracking-[0.2em] text-[10px] hover:bg-cyan hover:text-white hover:shadow-md transition-all">
+                                Execute_Transmission
+                            </button>
+                            <div id="formStatus" class="hidden font-mono text-[9px] text-center pt-4 uppercase tracking-widest"></div>
+                        </form>
                     </div>
                 </div>
+            </div>
+        </section>
+    </main>
 
-                <div class="col-md-8">
-                    <div class="skills-toolbar d-flex align-items-center flex-wrap gap-3 mb-4 justify-content-start">
-                        <h5 class="mb-0">Skills:</h5>
-                        <div class="d-flex flex-wrap gap-2">
-                            <button class="btn btn-outline-primary btn-sm" data-filter="all">All</button>
-                            <button class="btn btn-outline-primary btn-sm" data-filter="Frontend & UI">Frontend</button>
-                            <button class="btn btn-outline-primary btn-sm" data-filter="Backend & Architecture">Backend</button>
-                            <button class="btn btn-outline-primary btn-sm" data-filter="DevOps & Cloud">DevOps & Cloud</button>
-                            <button class="btn btn-outline-primary btn-sm" data-filter="CMS & SEO">CMS & SEO</button>
-                            <button class="btn btn-outline-primary btn-sm" data-filter="eCommerce & API">eCommerce & API</button>
-                            <button class="btn btn-outline-primary btn-sm" data-filter="AI & Automation">AI & Automation</button>
-                            <button class="btn btn-outline-primary btn-sm" data-filter="UX & Strategy">UX & Strategy</button>
-                        </div>
-                    </div>
-
-                    <div id="skills-container" class="skills-grouped"></div>
-                </div>
+    <footer class="py-16 border-t border-navy/5 bg-white">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <span class="font-mono text-[9px] uppercase tracking-[0.2em] text-navy/30">© <span id="year"></span> Jerzon Barbacena • Systems Operational // Tayabas, PH</span>
+            <div class="flex gap-8">
+                <a href="https://github.com/barbzbqt" class="font-mono text-[9px] uppercase tracking-widest text-navy/40 hover:text-cyan transition-colors">Github</a>
+                <a href="https://linkedin.com/in/jerzonbarbacena" class="font-mono text-[9px] uppercase tracking-widest text-navy/40 hover:text-cyan transition-colors">LinkedIn</a>
             </div>
         </div>
-    </section>
-
-    <section id="clients" class="py-5" data-aos="fade-up">
-        <div class="container text-center">
-            <h2 class="mb-4 fw-bold text-uppercase text-dark">Brands That Trust My Work</h2>
-            <p class="mb-5 text-muted">Collaborating with industry leaders who value precision, innovation, and timeless design—from digital pioneers to luxury homebuilders.</p>
-            
-            <div class="row justify-content-center align-items-center g-4 p-3">
-                <div class="col-6 col-sm-4 col-md-3 col-lg-3">
-                    <img src="./assets/images/family-law-attorney-site-logo.png" alt="Family Law Attorney Logo" class="img-fluid grayscale-hover" loading="lazy">
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-lg-3">
-                    <img src="./assets/images/hearth-and-harbor-homes-logo.svg" alt="Hearth & Harbor Homes" class="img-fluid grayscale-hover" loading="lazy">
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-lg-3">
-                    <img src="./assets/images/gs_logo.png" alt="Global Solutions" class="img-fluid grayscale-hover" loading="lazy">
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-lg-3">
-                    <img src="./assets/images/Measure-Logo-Website-1-1024x262.png" alt="Our Measure" class="img-fluid grayscale-hover" loading="lazy">
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-lg-3">
-                    <img src="./assets/images/mindcore-logo.svg" alt="MindCore Technologies" class="img-fluid grayscale-hover" loading="lazy">
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-lg-3">
-                    <img src="./assets/images/aire-socials-logo.png" alt="Aire Socials" class="img-fluid grayscale-hover" loading="lazy">
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-lg-3">
-                    <img src="./assets/images/Kubo_Spa_Logo_main.jpg" alt="Kubo Spa" class="img-fluid grayscale-hover" loading="lazy">
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-lg-3">
-                    <img src="./assets/images/the-weekend-project-co-logo.avif" alt="The Weekend Project Co." class="img-fluid grayscale-hover" loading="lazy">
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-lg-3">
-                    <img src="./assets/images/pivotal-solutions-logo.webp" alt="Pivotal Solutions" class="img-fluid grayscale-hover" loading="lazy">
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-lg-3">
-                    <img src="./assets/images/crowned-saints-logo.webp" alt="Pivotal Solutions" class="img-fluid grayscale-hover" loading="lazy">
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-lg-3">
-                    <img src="./assets/images/SDFLogo-150x94.png" alt="Pivotal Solutions" class="img-fluid grayscale-hover" loading="lazy">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="services" class="py-5 bg-light" data-aos="fade-up">
-        <div class="container">
-            <h2 class="mb-4 fw-bold text-uppercase text-dark text-center">Services</h2>
-            <p class="mb-5 text-muted text-center">
-                I deliver full-stack solutions for brands that value precision, scalability, and clean architecture — from CMS setups to custom dashboards.
-            </p>
-            <div class="row g-4" id="services-container"></div>
-        </div>
-    </section>
-
-    <section id="experience" class="py-5" data-aos="fade-up">
-        <div class="container">
-            <h2 class="mb-4 fw-bold text-uppercase text-dark text-center">Work Experience</h2>
-            <p class="mb-5 text-muted text-center">
-            My journey as a versatile full stack developer — delivering scalable systems, polished UI/UX, and cloud-ready solutions.
-            </p>
-
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h5 class="fw-bold mb-1">Senior Full Stack Developer</h5>
-                        <small class="text-muted d-block mb-2">BCS IT Corp · 2022–Present</small>
-                        <ul class="mb-0">
-                            <li>Developed scalable airline and medical clinic systems using ASP.NET Core, MVC, Web API, React, and Angular.</li>
-                            <li>Delivered secure cloud infrastructure using AWS EC2 and RDS, and optimized MSSQL databases with CI/CD pipelines via Jenkins and Octopus Deploy.</li>
-                            <li>Led code reviews, proposed architectural solutions, and mentored junior and mid-level developers to uphold coding standards, accelerate delivery, and foster team growth.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h5 class="fw-bold mb-1">ASP.NET Developer</h5>
-                        <small class="text-muted d-block mb-2">We Support Inc (Accenture PH) · Jul 2021–Jul 2022</small>
-                        <ul class="mb-0">
-                            <li>Built internal subscription and ID management systems using ASP.NET, Angular, and SQL.</li>
-                            <li>Used Azure DevOps for CI/CD and scalable architecture.</li>
-                            <li>Led code reviews and mentored junior and mid-level developers to uphold coding standards, accelerate delivery, and foster team growth.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h5 class="fw-bold mb-1">Software Engineer</h5>
-                        <small class="text-muted d-block mb-2">Virtual Champs Global · Mar 2020–Jul 2021</small>
-                        <ul class="mb-0">
-                            <li>Developed real estate platforms using Angular, ASP.NET Core, Spring Boot, and TypeScript.</li>
-                            <li>Built MySQL backends and responsive UI/UX.</li>
-                            <li>Collaborated in Agile teams to enhance features and accelerate delivery.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h5 class="fw-bold mb-1">Programmer</h5>
-                        <small class="text-muted d-block mb-2">Neltex Development Co., Inc. · Feb 2019–Mar 2020</small>
-                        <ul class="mb-0">
-                            <li>Created full-stack procurement solutions with ASP.NET Web Forms and SQL.</li>
-                            <li>Streamlined workflows and improved user experience.</li>
-                            <li>Ensured scalability and code quality through testing and collaboration.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h5 class="fw-bold mb-1">Application Support Analyst</h5>
-                        <small class="text-muted d-block mb-2">Gardenia Bakeries Philippines Inc. · Feb 2018–Mar 2019</small>
-                        <ul class="mb-0">
-                            <li>Provided technical support and resolved application issues.</li>
-                            <li>Managed network and system administration for optimal performance.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h5 class="fw-bold mb-1">Junior Software Engineer</h5>
-                        <small class="text-muted d-block mb-2">Kinpo Electronics · Jul 2017–Feb 2018</small>
-                        <ul class="mb-0">
-                            <li>Developed 3D printer applications using C++ and OpenGL.</li>
-                            <li>Delivered real-time graphics rendering and conducted rigorous testing.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- <section id="projects" class="py-5 bg-light" data-aos="fade-up">
-        <div class="container">
-            <h2 class="mb-4 fw-bold text-uppercase text-dark text-center">Projects</h2>
-            <p class="mb-5 text-muted text-center">Every project I build is driven by purpose and precision—whether it’s a modular dashboard, booking flow, or cloud-native platform. I blend technical depth with refined design to deliver scalable, conversion-focused solutions tailored to real-world needs.</p>
-            <div class="row g-4" id="project-container">
-            </div>
-        </div>
-    </section> -->
-    <section id="projects" class="py-5 bg-light" data-aos="fade-up">
-        <div class="container">
-            <h2 class="mb-4 fw-bold text-uppercase text-dark text-center">Projects</h2>
-            <p class="mb-5 text-muted text-center">
-                Every project I build is driven by purpose and precision—whether it’s a modular dashboard, booking flow, or cloud-native platform. I blend technical depth with refined design to deliver scalable, conversion-focused solutions tailored to real-world needs.
-            </p>
-            <div class="text-center mb-4">
-                <button class="btn btn-sm btn-outline-dark me-2" data-filter="all">All</button>
-                <button class="btn btn-sm btn-outline-dark me-2" data-filter="client">Wordpress Sites</button>
-                <button class="btn btn-sm btn-outline-dark me-2" data-filter="freelance">Custom Apps</button>
-                <button class="btn btn-sm btn-outline-dark" data-filter="research">Research Apps</button>
-            </div>
-
-            <div class="row g-4" id="project-container"></div>
-        </div>
-    </section>
-
-    <section id="testimonials" class="py-5" data-aos="fade-up">
-        <div class="container">
-            <h2 class="section-title text-center mb-5">Client Testimonials</h2>
-            <div class="row g-4" id="testimonials-container">
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="py-5" data-aos="fade-up">
-        <div class="container">
-            <h2 class="mb-4 fw-bold text-uppercase text-dark text-center">Let's Connect</h2>
-            <div class="row align-items-start justify-content-center">
-            
-            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <form id="contact-form">
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" name="name" class="form-control" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" name="email" class="form-control" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea name="message" rows="5" class="form-control" required></textarea>
-                    </div>
-                    <div class="text-center">
-                        <button type="submit" class="btn btn-primary px-4">Send Message</button>
-                    </div>
-                </form>
-            </div>
-
-            <div class="col-md-5 offset-md-1 mb-2" data-aos="fade-up" data-aos-delay="200">
-                <ul class="list-unstyled contact-list" id="contact-container"></ul>
-            </div>
-
-            </div>
-        </div>
-    </section>
-    <section id="faqs" class="py-5 bg-light" data-aos="fade-up">
-        <div class="container">
-            <h2 class="mb-4 fw-bold text-uppercase text-dark text-center">Frequently Asked Questions</h2>
-            <div class="accordion" id="faqAccordion">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="faq1">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
-                            What services do you offer?
-                        </button>
-                    </h2>
-                    <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            I offer full-stack development, WordPress and Shopify builds, scraping workflows, database optimization, and modular dashboards.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="faq2">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
-                        What technologies do you use?
-                    </button>
-                    </h2>
-                    <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        My stack includes .NET, React, Angular, MS SQL, PHP, MySQL, HTML, Bootstrap, WordPress, Shopify (Liquid), and custom JavaScript for dynamic features.
-                    </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="faq3">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
-                            How do you price your projects?
-                        </button>
-                    </h2>
-                    <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            I offer flat-rate, milestone-based, and hourly pricing depending on project scope and client preference.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="faq4">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
-                            Do you require a deposit?
-                        </button>
-                    </h2>
-                    <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            Yes — I typically require a 30%–50% deposit after the first milestone or initial setup is successfully delivered.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="faq5">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5">
-                            What’s your typical turnaround time?
-                        </button>
-                    </h2>
-                    <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            Most projects take 2–4 weeks depending on scope. I deliver in scoped milestones with rapid iteration.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="faq6">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6">
-                            Do you offer revisions?
-                        </button>
-                    </h2>
-                    <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            Yes — I iterate rapidly based on client feedback and guarantee client-proof delivery. Most packages include 1–3 rounds of revisions.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="faq7">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7">
-                            Do you provide source code and credentials?
-                        </button>
-                    </h2>
-                    <div id="collapse7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            Always. I turn over all assets upon completion for full client control — including source code, credentials, and documentation.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="faq8">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8">
-                            How do we start working together?
-                        </button>
-                    </h2>
-                    <div id="collapse8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            Just send me a message with your goals or project scope. I’ll reply with a breakdown, timeline, and next steps. We can kick off with a discovery call or jump straight into development.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="faq9">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9">
-                            Can I edit the site myself after launch?
-                        </button>
-                    </h2>
-                    <div id="collapse9" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            Absolutely. I build modular, client-editable layouts using WordPress (Elementor, CPT, ACF) and Shopify (Liquid templates, metafields). You’ll have full control with zero confusion.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; <span id="year"></span> Jerzon Barbacena. All rights reserved.</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script>
-        const _0x4c50ba=_0x5c82;(function(_0x5dbbd8,_0x54d7ef){const _0x3ed37a=_0x5c82,_0x5378f4=_0x5dbbd8();while(!![]){try{const _0xa098e9=parseInt(_0x3ed37a(0x133))/0x1+parseInt(_0x3ed37a(0x16f))/0x2+-parseInt(_0x3ed37a(0xc1))/0x3+-parseInt(_0x3ed37a(0x129))/0x4+-parseInt(_0x3ed37a(0x16b))/0x5*(parseInt(_0x3ed37a(0x14c))/0x6)+parseInt(_0x3ed37a(0x11c))/0x7*(-parseInt(_0x3ed37a(0xcd))/0x8)+parseInt(_0x3ed37a(0x16d))/0x9;if(_0xa098e9===_0x54d7ef)break;else _0x5378f4['push'](_0x5378f4['shift']());}catch(_0x381e1c){_0x5378f4['push'](_0x5378f4['shift']());}}}(_0x1803,0x25e84),document['addEventListener']('DOMContentLoaded',function(){const _0x32113b=_0x5c82;var _0xf09fe0=[][_0x32113b(0x137)][_0x32113b(0x173)](document[_0x32113b(0xdf)](_0x32113b(0x10b)));_0xf09fe0[_0x32113b(0x143)](function(_0x20413e){return new bootstrap['Popover'](_0x20413e);});}),document['getElementById'](_0x4c50ba(0xc5))['textContent']=new Date()['getFullYear']());const projects=[{'category':'client','title':_0x4c50ba(0xd4),'description':_0x4c50ba(0xba),'image':_0x4c50ba(0x112),'link':_0x4c50ba(0x105)},{'category':'client','title':_0x4c50ba(0xeb),'description':_0x4c50ba(0xbd),'image':_0x4c50ba(0x108),'link':_0x4c50ba(0xc0)},{'category':_0x4c50ba(0xb5),'title':_0x4c50ba(0x156),'description':_0x4c50ba(0x177),'image':_0x4c50ba(0x141),'link':_0x4c50ba(0xec)},{'category':_0x4c50ba(0xb5),'title':_0x4c50ba(0xf4),'description':_0x4c50ba(0x158),'image':'./assets/images/Kubo_Spa_Logo_main.jpg','link':_0x4c50ba(0x163)},{'category':_0x4c50ba(0xb5),'title':_0x4c50ba(0x15b),'description':_0x4c50ba(0xf0),'image':_0x4c50ba(0x171),'link':_0x4c50ba(0xf6)},{'category':_0x4c50ba(0xb5),'title':'Global\x20Solutions','description':'Professional\x20staffing\x20and\x20recruitment\x20website\x20for\x20global\x20workforce\x20solutions.','image':'./assets/images/gs_logo.png','link':_0x4c50ba(0x14a)},{'category':'freelance','title':_0x4c50ba(0xe9),'description':_0x4c50ba(0xd9),'image':_0x4c50ba(0x172)},{'category':_0x4c50ba(0xbf),'title':'HRIS\x20for\x20Teaching\x20Staff','description':_0x4c50ba(0x101),'image':_0x4c50ba(0x159)},{'category':_0x4c50ba(0xbf),'title':_0x4c50ba(0x13b),'description':'Data\x20warehouse\x20solution\x20for\x20managing\x20research\x20and\x20extension\x20service\x20records.','image':_0x4c50ba(0x119)},{'category':_0x4c50ba(0xbf),'title':_0x4c50ba(0x109),'description':_0x4c50ba(0x102),'image':_0x4c50ba(0x150)},{'category':'freelance','title':'WordPress\x20&\x20Shopify\x20Builds','description':_0x4c50ba(0xbb),'image':_0x4c50ba(0x131)},{'category':_0x4c50ba(0xe1),'title':'Swine\x20Weight\x20Prediction\x20App','description':_0x4c50ba(0x11a),'image':_0x4c50ba(0x100)},{'category':_0x4c50ba(0xe1),'title':_0x4c50ba(0x165),'description':_0x4c50ba(0x166),'image':_0x4c50ba(0xce)}],container=document['querySelector'](_0x4c50ba(0xfe));projects[_0x4c50ba(0xd0)](_0x3c916e=>{const _0x23665c=_0x4c50ba,_0xa5a110=document['createElement']('div');_0xa5a110[_0x23665c(0x176)]='col-md-4',_0xa5a110[_0x23665c(0x10a)]=_0x23665c(0x127)+_0x3c916e[_0x23665c(0xca)]+_0x23665c(0x12b)+_0x3c916e['title']+'\x22\x20loading=\x22lazy\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22card-body\x20d-flex\x20flex-column\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h5\x20class=\x22card-title\x22>'+_0x3c916e[_0x23665c(0xf7)]+_0x23665c(0xd8)+_0x3c916e[_0x23665c(0xcc)]+_0x23665c(0x104)+(_0x3c916e['link']?_0x23665c(0x106)+_0x3c916e['link']+_0x23665c(0x123):'')+_0x23665c(0xd6),_0xa5a110[_0x23665c(0xde)](_0x23665c(0x12a))['setAttribute'](_0x23665c(0x107),_0x3c916e[_0x23665c(0xda)]),container[_0x23665c(0x121)](_0xa5a110);}),document[_0x4c50ba(0xdf)]('[data-filter]')[_0x4c50ba(0xd0)](_0x5e3209=>{const _0x10c9d0=_0x4c50ba;_0x5e3209[_0x10c9d0(0x15d)](_0x10c9d0(0x178),()=>{const _0x3fcd6c=_0x10c9d0,_0x420f84=_0x5e3209[_0x3fcd6c(0x152)](_0x3fcd6c(0xcf));document['querySelectorAll'](_0x3fcd6c(0x10f))[_0x3fcd6c(0xd0)](_0x2cb52b=>{const _0x60e24a=_0x3fcd6c,_0x352479=_0x2cb52b[_0x60e24a(0xde)](_0x60e24a(0x146))[_0x60e24a(0x152)](_0x60e24a(0x107));_0x2cb52b[_0x60e24a(0x14f)][_0x60e24a(0xd3)]=_0x420f84===_0x60e24a(0x138)||_0x352479===_0x420f84?'':_0x60e24a(0xff);});});});const skillGroups={'Frontend\x20&\x20UI':[_0x4c50ba(0xfa),'React','JavaScript',_0x4c50ba(0x154),_0x4c50ba(0xee)],'Backend\x20&\x20Architecture':['.NET\x20Ecosystem\x20(Core,\x20Framework,\x206+)',_0x4c50ba(0x140),_0x4c50ba(0x162),_0x4c50ba(0xed),_0x4c50ba(0x11e)],'DevOps\x20&\x20Cloud':[_0x4c50ba(0x13a),_0x4c50ba(0x13f),'Git\x20&\x20Azure\x20DevOps'],'CMS\x20&\x20SEO':[_0x4c50ba(0x160),_0x4c50ba(0xdb),_0x4c50ba(0x110)],'eCommerce\x20&\x20API':[_0x4c50ba(0x125),_0x4c50ba(0x118),_0x4c50ba(0x16a),_0x4c50ba(0xb7)],'AI\x20&\x20Automation':[_0x4c50ba(0x134),_0x4c50ba(0x11f),_0x4c50ba(0x147),'Scraping\x20Workflows','Persona-Region\x20Matrix\x20Generation'],'UX\x20&\x20Strategy':[_0x4c50ba(0xe4)]},skillIcons={'Angular':_0x4c50ba(0x155),'React':_0x4c50ba(0x11b),'JavaScript':'bi-code-slash','PHP':'bi-filetype-php','Git\x20&\x20Azure\x20DevOps':_0x4c50ba(0xc3),'WordPress\x20Development':_0x4c50ba(0xe6),'Shopify\x20Storefront\x20&\x20Admin\x20API':_0x4c50ba(0xb9),'SEO\x20Optimization\x20&\x20Site\x20Speed':_0x4c50ba(0x113),'Azure\x20&\x20AWS':_0x4c50ba(0x130),'RESTful\x20APIs\x20&\x20Microservices':_0x4c50ba(0x148),'Database\x20Management\x20&\x20Optimization':_0x4c50ba(0x12d),'CI/CD\x20Pipelines':'bi-arrow-repeat','OAuth,\x20Webhooks\x20&\x20Token\x20Management':'bi-key','Layout\x20Optimization\x20&\x20Accessibility':_0x4c50ba(0x13e),'Visual\x20Storytelling\x20&\x20UI/UX':_0x4c50ba(0x15c),'User\x20Insights':_0x4c50ba(0x12c),'.NET\x20Ecosystem\x20(Core,\x20Framework,\x206+)':'bi-box','ASP.NET\x20MVC\x20&\x20Razor\x20View\x20Engine':_0x4c50ba(0x157),'Elementor\x20&\x20ACF\x20Integration':'bi-puzzle','Liquid\x20Templating\x20&\x20Theme\x20Customization':_0x4c50ba(0xd7),'RESTful\x20API\x20Development\x20&\x20Integration':_0x4c50ba(0x142),'AI-Powered\x20Design\x20Automation':'bi-robot','OpenCV\x20Color\x20Matching':'bi-eyedropper','Payload\x20Engineering':_0x4c50ba(0xb8),'Scraping\x20Workflows':_0x4c50ba(0x124),'Persona-Region\x20Matrix\x20Generation':_0x4c50ba(0xe3)},skillsContainer=document[_0x4c50ba(0xf8)]('skills-container');Object[_0x4c50ba(0xc4)](skillGroups)[_0x4c50ba(0xd0)](([_0xde6f8f,_0x27c4b9],_0x278417)=>{const _0x357656=_0x4c50ba,_0x3717b6=document[_0x357656(0x153)]('div');_0x3717b6[_0x357656(0x176)]='skill-group',_0x3717b6[_0x357656(0x114)]('data-aos',_0x357656(0xe2)),_0x3717b6[_0x357656(0x114)]('data-aos-delay',_0x278417*0x64);const _0x48268b=_0x27c4b9['map'](_0x5f353f=>{const _0x540268=_0x357656,_0x1c25c7=skillIcons[_0x5f353f]||_0x540268(0xd2);return _0x540268(0xef)+_0x5f353f+'\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22'+_0x1c25c7+_0x540268(0xea)+_0x5f353f+_0x540268(0x14d);})[_0x357656(0x149)]('');_0x3717b6[_0x357656(0x10a)]=_0x357656(0xd1)+_0xde6f8f+_0x357656(0x103)+_0x48268b+_0x357656(0x14b),skillsContainer[_0x357656(0x121)](_0x3717b6);}),document[_0x4c50ba(0xdf)](_0x4c50ba(0x120))[_0x4c50ba(0xd0)](_0x3e89bd=>{const _0x28ac53=_0x4c50ba;new bootstrap[(_0x28ac53(0xe7))](_0x3e89bd);}),document[_0x4c50ba(0xdf)](_0x4c50ba(0xdc))[_0x4c50ba(0xd0)](_0x1d431b=>{const _0x22c653=_0x4c50ba;_0x1d431b[_0x22c653(0x15d)](_0x22c653(0x178),()=>{const _0x1fda2c=_0x22c653,_0x44e634=_0x1d431b[_0x1fda2c(0x152)]('data-filter');document[_0x1fda2c(0xdf)](_0x1fda2c(0x116))[_0x1fda2c(0xd0)](_0x500792=>{const _0x2a8ace=_0x1fda2c;_0x500792[_0x2a8ace(0x14f)]['display']=_0x44e634===_0x2a8ace(0x138)||_0x500792['querySelector'](_0x2a8ace(0x10d))[_0x2a8ace(0x15a)]===_0x44e634?_0x2a8ace(0xcb):_0x2a8ace(0xff);});});});const tooltipTriggerList=[][_0x4c50ba(0x137)][_0x4c50ba(0x173)](document['querySelectorAll']('[data-bs-toggle=\x22tooltip\x22]'));tooltipTriggerList[_0x4c50ba(0xd0)](_0x4ca668=>new bootstrap['Tooltip'](_0x4ca668)),document['querySelectorAll'](_0x4c50ba(0xdc))['forEach'](_0x519f16=>{const _0x352435=_0x4c50ba;_0x519f16[_0x352435(0x15d)](_0x352435(0x178),()=>{const _0x15d7cc=_0x352435,_0x3945db=_0x519f16[_0x15d7cc(0x152)](_0x15d7cc(0xcf));document['querySelectorAll'](_0x15d7cc(0x116))['forEach'](_0x5cf1f1=>{const _0x3faa0d=_0x15d7cc;_0x5cf1f1[_0x3faa0d(0x14f)][_0x3faa0d(0xd3)]=_0x3945db===_0x3faa0d(0x138)||_0x5cf1f1['querySelector']('.skill-category')[_0x3faa0d(0x15a)]===_0x3945db?'block':'none';});});});function _0x1803(){const _0x598278=['Aire\x20Socials','bi-window','Responsive\x20spa\x20website\x20with\x20online\x20booking,\x20services\x20showcase,\x20and\x20elegant\x20brand\x20design.','https://media.istockphoto.com/id/1373233627/vector/human-resources-information-system-hris-isometric-3d.jpg?s=612x612&w=0&k=20&c=PM4o39M2b7jD2dcBufAerrhYIvrMEqAb0jPeZlaJ1mY=','textContent','Our\x20Measure','bi-palette','addEventListener','link','div','WordPress\x20Development','mb-3','PHP','https://phkubospa.cl/','linkedin.com/in/jerzonbarbacena','Mangrove\x20Classification\x20App','Mobile\x20app\x20for\x20classifying\x20mangrove\x20species\x20using\x20image\x20processing\x20techniques.','\x22\x20target=\x22_blank\x22>','./assets/images/testimonial-maria.jpg','name','RESTful\x20API\x20Development\x20&\x20Integration','10WTNhoZ','The\x20analytics\x20dashboard\x20Jerzon\x20built\x20transformed\x20how\x20we\x20make\x20decisions.\x20Clean,\x20fast,\x20and\x20client-proof.','7820343XXFfEG','Senior\x20Full-Stack\x20Developer','218670kCVNUa','bi-envelope-fill','./assets/images/Measure-Logo-Website-1-1024x262.png','https://www.channelrush.com/wp-content/uploads/2020/02/property-management-system.png','call','bi-cloud-arrow-up','Cloud\x20&\x20DevOps','className','Modern\x20social\x20media\x20agency\x20site\x20featuring\x20a\x20sleek,\x20responsive\x20design,\x20service\x20highlights,\x20and\x20polished\x20brand\x20identity.','click','Database\x20Optimization','client','Web\x20Development','OAuth,\x20Webhooks\x20&\x20Token\x20Management','bi-terminal','bi-bag-check','Professional\x20law\x20firm\x20website\x20for\x20a\x20Los\x20Angeles\x20family\x20attorney,\x20featuring\x20responsive\x20design,\x20service\x20highlights,\x20and\x20local\x20SEO\x20optimization.','Developed\x20branded\x20WordPress\x20and\x20Shopify\x20sites\x20with\x20modular\x20purchase\x20flows\x20and\x20responsive\x20layouts.','\x22\x20class=\x22rounded-circle\x20mx-auto\x20mt-4\x20mb-3\x22\x20width=\x2280\x22\x20height=\x2280\x22\x20loading=\x22lazy\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22card-body\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22card-text\x22>\x22','Premium\x20home\x20rental\x20platform\x20with\x20elegant\x20branding,\x20responsive\x20layout,\x20and\x20seamless\x20property\x20showcase.','data-aos','freelance','https://hearthandharborhomes.com/','517965FAFPPA','\x22</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h6\x20class=\x22mt-3\x20mb-0\x22>','bi-git','entries','year','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22bi\x20','jerzon.barbacena@gmail.com','role','Hello,\x20I\x27m\x20Jerzon\x20Barbacena','image','block','description','2192264yvGSBh','https://cdn-icons-png.flaticon.com/512/2907/2907253.png','data-filter','forEach','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h6\x20class=\x22skill-category\x22>','bi-circle','display','Family\x20Law\x20Attorney','From\x20concept\x20to\x20code\x20—\x20I\x20build\x20premium,\x20scalable\x20experiences.','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20','bi-droplet','</h5>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22card-text\x22>','Custom\x20system\x20for\x20real\x20estate\x20developer\x20to\x20manage\x20property\x20records\x20and\x20sales\x20reporting.','category','Elementor\x20&\x20ACF\x20Integration','[data-filter]','data-aos-delay','querySelector','querySelectorAll','UI/UX\x20Design','research','fade-up','bi-grid','User\x20Insights','Our\x20recruitment\x20portal\x20is\x20now\x20sleek,\x20scalable,\x20and\x20easy\x20to\x20manage.\x20Jerzon’s\x20work\x20exceeded\x20expectations.','bi-wordpress','Tooltip','</a>','Property\x20Management\x20System','\x20me-1\x22></i>','Hearth\x20and\x20Harbor\x20Homes','https://airesocialsagency.com/','RESTful\x20APIs\x20&\x20Microservices','Visual\x20Storytelling\x20&\x20UI/UX','<span\x20class=\x22skill-badge\x22\x20data-bs-toggle=\x22tooltip\x22\x20title=\x22','Business\x20analytics\x20platform\x20with\x20dashboards\x20and\x20insights\x20for\x20smarter\x20decisions.','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','WordPress\x20Solutions','services-container','Kubo\x20Spa','Jerzon\x20delivered\x20a\x20stunning\x20website\x20that\x20perfectly\x20reflects\x20our\x20brand.\x20Booking\x20rates\x20increased\x20by\x2030%\x20after\x20launch.','https://ourmeasure.com/','title','getElementById','Custom\x20themes,\x20plugins,\x20Elementor,\x20CPT\x20&\x20ACF\x20integration,\x20SEO\x20optimization,\x20and\x20performance\x20tuning.','Angular','https://www.linkedin.com/in/jerzonbarbacena','Maria\x20Santos','Shopify\x20Integration','#projects\x20.row','none','https://d3i71xaburhd42.cloudfront.net/08958e6cdbcf819a7259db792ea56708d0788c46/5-Figure1-1.png','Custom\x20HR\x20system\x20for\x20academic\x20institutions\x20to\x20manage\x20faculty\x20records\x20and\x20payroll.','Responsive\x20listings\x20platform\x20for\x20showcasing\x20properties\x20with\x20search\x20and\x20filter\x20features.','</h6>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22skill-badges\x22>','</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','https://familylawattorney.us/','<a\x20href=\x22','data-category','./assets/images/hearth-and-harbor-homes-logo.svg','Real\x20Estate\x20Property\x20Listings\x20Website','innerHTML','[data-bs-toggle=\x22popover\x22]','Tayabas\x20City,\x20Quezon\x20Province','.skill-category','./assets/images/testimonial-lara.jpg','#projects\x20.col-md-4','SEO\x20Optimization\x20&\x20Site\x20Speed','bi-code-slash','./assets/images/family-law-attorney-site-logo.png','bi-speedometer2','setAttribute','bi-linkedin','.skill-group','Spa\x20Owner,\x20Kubo\x20Spa','Liquid\x20Templating\x20&\x20Theme\x20Customization','https://cdn-icons-png.flaticon.com/512/3135/3135715.png','Image-based\x20prediction\x20tool\x20using\x20computer\x20vision\x20and\x20ML\x20for\x20livestock\x20management.','bi-cpu','7wnqjoo','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22card\x20h-100\x20shadow-sm\x20border-0\x20text-center\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22','Database\x20Management\x20&\x20Optimization','OpenCV\x20Color\x20Matching','[data-bs-toggle=\x22tooltip\x22]','appendChild','bi-database-check','\x22\x20target=\x22_blank\x22\x20class=\x22btn\x20btn-sm\x20btn-outline-primary\x20mt-auto\x22>Live\x20Demo</a>','bi-gear','Shopify\x20Storefront\x20&\x20Admin\x20API','testimonials-container','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22card\x20h-100\x20shadow-sm\x20project-card\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22image-wrapper\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22card\x20h-100\x20shadow-sm\x20border-0\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22card-body\x20text-center\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22bi\x20','1027824lbtfUs','.card','\x22\x20class=\x22card-img-top\x22\x20alt=\x22','bi-person-check','bi-hdd-network','icon','\x22\x20alt=\x22','bi-cloud','https://cdn-icons-png.flaticon.com/512/919/919851.png','Custom\x20Shopify\x20themes,\x20Liquid\x20templating,\x20storefront\x20setup,\x20and\x20Admin\x20API\x20integrations\x20for\x20products,\x20orders,\x20and\x20customer\x20workflows.','79318OCTpTl','AI-Powered\x20Design\x20Automation','./assets/images/testimonial-james.jpg','CEO,\x20Our\x20Measure','slice','all','bi-geo-alt-fill','Azure\x20&\x20AWS','Research\x20&\x20Extension\x20Services\x20Data\x20Warehouse','James\x20Tan','Designing\x20responsive,\x20accessible,\x20and\x20visually\x20engaging\x20interfaces\x20that\x20improve\x20user\x20experience.','bi-eye','CI/CD\x20Pipelines','ASP.NET\x20MVC\x20&\x20Razor\x20View\x20Engine','./assets/images/aire-socials-logo.png','bi-plug','map','Deployment\x20and\x20optimization\x20on\x20Azure\x20&\x20AWS,\x20with\x20CI/CD\x20pipelines\x20and\x20scalable\x20infrastructure.','bi-brush','.project-card','Payload\x20Engineering','bi-diagram-3','join','https://global-solutions.net/','</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','596004faFKcH','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</span>','label','style','https://cdn-icons-png.flaticon.com/512/619/619153.png','contact-container','getAttribute','createElement','Layout\x20Optimization\x20&\x20Accessibility','bi-lightning-fill'];_0x1803=function(){return _0x598278;};return _0x1803();}function _0x5c82(_0x54f3ab,_0x432123){_0x54f3ab=_0x54f3ab-0xb4;const _0x180388=_0x1803();let _0x5c82d8=_0x180388[_0x54f3ab];return _0x5c82d8;}const services=[{'title':_0x4c50ba(0xb6),'icon':_0x4c50ba(0x111),'description':'Full-stack\x20solutions\x20using\x20.NET,\x20ASP.NET\x20MVC,\x20Angular,\x20React,\x20and\x20JavaScript\x20to\x20deliver\x20robust\x20web\x20applications.\x20Includes\x20RESTful\x20API\x20development,\x20third-party\x20integrations,\x20and\x20scalable\x20microservices.'},{'title':_0x4c50ba(0xe0),'icon':_0x4c50ba(0x145),'description':_0x4c50ba(0x13d)},{'title':_0x4c50ba(0x175),'icon':_0x4c50ba(0x174),'description':_0x4c50ba(0x144)},{'title':_0x4c50ba(0xf2),'icon':'bi-wordpress','description':_0x4c50ba(0xf9)},{'title':_0x4c50ba(0xb4),'icon':_0x4c50ba(0x122),'description':'Schema\x20design,\x20query\x20tuning,\x20and\x20scalable\x20database\x20management\x20for\x20performance\x20and\x20efficiency.'},{'title':_0x4c50ba(0xfd),'icon':'bi-cart-check','description':_0x4c50ba(0x132)}],servicesContainer=document[_0x4c50ba(0xf8)](_0x4c50ba(0xf3));services[_0x4c50ba(0xd0)]((_0xc4e1af,_0x5a8c90)=>{const _0x47b004=_0x4c50ba,_0xf53e7d=document['createElement'](_0x47b004(0x15f));_0xf53e7d[_0x47b004(0x176)]='col-md-4',_0xf53e7d[_0x47b004(0x114)](_0x47b004(0xbe),_0x47b004(0xe2)),_0xf53e7d['setAttribute'](_0x47b004(0xdd),''+(_0x5a8c90+0x1)*0x64),_0xf53e7d[_0x47b004(0x10a)]=_0x47b004(0x128)+_0xc4e1af[_0x47b004(0x12e)]+'\x20display-4\x20text-custom\x20mb-3\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h5\x20class=\x22card-title\x22>'+_0xc4e1af[_0x47b004(0xf7)]+_0x47b004(0xd8)+_0xc4e1af[_0x47b004(0xcc)]+'</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20',servicesContainer['appendChild'](_0xf53e7d);});const testimonials=[{'name':_0x4c50ba(0xfc),'role':_0x4c50ba(0x117),'quote':_0x4c50ba(0xf5),'image':_0x4c50ba(0x168)},{'name':_0x4c50ba(0x13c),'role':_0x4c50ba(0x136),'quote':_0x4c50ba(0x16c),'image':_0x4c50ba(0x135)},{'name':'Lara\x20Mendoza','role':'HR\x20Director,\x20Global\x20Solutions','quote':_0x4c50ba(0xe5),'image':_0x4c50ba(0x10e)}],testimonialContainer=document[_0x4c50ba(0xf8)](_0x4c50ba(0x126));testimonials[_0x4c50ba(0xd0)]((_0x1617a5,_0x242525)=>{const _0x4e15fc=_0x4c50ba,_0x416477=document['createElement'](_0x4e15fc(0x15f));_0x416477['className']='col-md-4',_0x416477[_0x4e15fc(0x114)](_0x4e15fc(0xbe),'fade-up'),_0x416477[_0x4e15fc(0x114)]('data-aos-delay',''+(_0x242525+0x1)*0x64),_0x416477[_0x4e15fc(0x10a)]=_0x4e15fc(0x11d)+_0x1617a5['image']+_0x4e15fc(0x12f)+_0x1617a5[_0x4e15fc(0x169)]+_0x4e15fc(0xbc)+_0x1617a5['quote']+_0x4e15fc(0xc2)+_0x1617a5[_0x4e15fc(0x169)]+'</h6>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<small\x20class=\x22text-muted\x22>'+_0x1617a5[_0x4e15fc(0xc8)]+'</small>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20',testimonialContainer[_0x4e15fc(0x121)](_0x416477);});const contactItems=[{'icon':_0x4c50ba(0x170),'label':_0x4c50ba(0xc7),'link':'mailto:jerzon.barbacena@gmail.com'},{'icon':_0x4c50ba(0x115),'label':_0x4c50ba(0x164),'link':_0x4c50ba(0xfb)},{'icon':_0x4c50ba(0x139),'label':_0x4c50ba(0x10c)}],contactContainer=document[_0x4c50ba(0xf8)](_0x4c50ba(0x151));contactItems[_0x4c50ba(0xd0)](_0x2632f7=>{const _0x4526cb=_0x4c50ba,_0x385f9c=document[_0x4526cb(0x153)]('li');_0x385f9c[_0x4526cb(0x176)]=_0x4526cb(0x161),_0x385f9c[_0x4526cb(0x10a)]=_0x4526cb(0xc6)+_0x2632f7[_0x4526cb(0x12e)]+'\x20text-accent\x20me-2\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+(_0x2632f7['link']?_0x4526cb(0x106)+_0x2632f7[_0x4526cb(0x15e)]+_0x4526cb(0x167)+_0x2632f7[_0x4526cb(0x14e)]+_0x4526cb(0xe8):_0x2632f7[_0x4526cb(0x14e)])+_0x4526cb(0xf1),contactContainer[_0x4526cb(0x121)](_0x385f9c);});const line1=_0x4c50ba(0xc9),line2=_0x4c50ba(0x16e),line3=_0x4c50ba(0xd5);let i=0x0,j=0x0,k=0x0,current1='',current2='',current3='';
-    </script>
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Person",
-            "name": "Jerzon",
-            "url": "https://barbzbqt.github.io/",
-            "jobTitle": "Senior Full Stack Developer",
-            "sameAs": [
-                "https://www.linkedin.com/in/jerzon",
-                "https://github.com/barbzbqt"
-            ]
-        }
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>AOS.init();</script>
+        (function() {
+            emailjs.init("pmrNieUSeT4KeVxwr");
+            document.getElementById('year').textContent = new Date().getFullYear();
 
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-    <script>
-        function _0x193c(){const _0x2e437c=['toast-success','31czpNHC','contact-form','init','71772HfZWNO','</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20type=\x22button\x22\x20class=\x22btn-close\x20btn-close-white\x20me-2\x20m-auto\x22\x20data-bs-dismiss=\x22toast\x22\x20aria-label=\x22Close\x22></button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','div','appendChild','10655uffzqc','EmailJS\x20Error:','toast-error','addEventListener','reset','Message\x20sent\x20successfully!','33ZxVjFM','3162717ecVvdh','error','\x20border-0\x20show','aria-live','getElementById','8lhjDyX','pmrNieUSeT4KeVxwr','144qkUOdU','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22d-flex\x20bg-info\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22toast-body\x22>','role','toast\x20align-items-center\x20text-white\x20','remove','sendForm','1600450OHbPIa','success','preventDefault','setAttribute','5595744dkXosy','toast-container','71932iTltor','assertive','16434828gBkDFY','2658SWaMaV','Oops!\x20Something\x20went\x20wrong.','then'];_0x193c=function(){return _0x2e437c;};return _0x193c();}const _0x2cc4af=_0x6861;(function(_0x3cb0a5,_0x318456){const _0x3746e2=_0x6861,_0x3fcf0b=_0x3cb0a5();while(!![]){try{const _0xa34d76=-parseInt(_0x3746e2(0x1ea))/0x1*(-parseInt(_0x3746e2(0x1e3))/0x2)+parseInt(_0x3746e2(0x1d7))/0x3*(parseInt(_0x3746e2(0x1ed))/0x4)+parseInt(_0x3746e2(0x1f1))/0x5*(-parseInt(_0x3746e2(0x1e6))/0x6)+parseInt(_0x3746e2(0x1e1))/0x7+parseInt(_0x3746e2(0x1fd))/0x8*(-parseInt(_0x3746e2(0x1f8))/0x9)+-parseInt(_0x3746e2(0x1dd))/0xa*(-parseInt(_0x3746e2(0x1f7))/0xb)+-parseInt(_0x3746e2(0x1e5))/0xc;if(_0xa34d76===_0x318456)break;else _0x3fcf0b['push'](_0x3fcf0b['shift']());}catch(_0x4f2425){_0x3fcf0b['push'](_0x3fcf0b['shift']());}}}(_0x193c,0x90382),emailjs[_0x2cc4af(0x1ec)](_0x2cc4af(0x1fe)),document['getElementById'](_0x2cc4af(0x1eb))[_0x2cc4af(0x1f4)]('submit',function(_0x33bd1f){const _0x1a1d93=_0x2cc4af;_0x33bd1f[_0x1a1d93(0x1df)](),emailjs[_0x1a1d93(0x1dc)]('service_3ylk8f8','template_5nsg1hm',this)[_0x1a1d93(0x1e8)](()=>{const _0x5e1c28=_0x1a1d93;showToast(_0x5e1c28(0x1f6),_0x5e1c28(0x1de)),this[_0x5e1c28(0x1f5)]();},_0x32835e=>{const _0x195189=_0x1a1d93;console[_0x195189(0x1f9)](_0x195189(0x1f2),_0x32835e),showToast(_0x195189(0x1e7),_0x195189(0x1f9));});}));function _0x6861(_0x290152,_0x5e19d5){const _0x193c1a=_0x193c();return _0x6861=function(_0x686199,_0x41c545){_0x686199=_0x686199-0x1d7;let _0x2a5991=_0x193c1a[_0x686199];return _0x2a5991;},_0x6861(_0x290152,_0x5e19d5);}function showToast(_0x40f47b,_0x7f15dc=_0x2cc4af(0x1de)){const _0xb6edf6=_0x2cc4af,_0x3cc0c6=document['createElement'](_0xb6edf6(0x1ef));_0x3cc0c6['className']=_0xb6edf6(0x1da)+(_0x7f15dc===_0xb6edf6(0x1de)?_0xb6edf6(0x1e9):_0xb6edf6(0x1f3))+_0xb6edf6(0x1fa),_0x3cc0c6[_0xb6edf6(0x1e0)](_0xb6edf6(0x1d9),'alert'),_0x3cc0c6[_0xb6edf6(0x1e0)](_0xb6edf6(0x1fb),_0xb6edf6(0x1e4)),_0x3cc0c6[_0xb6edf6(0x1e0)]('aria-atomic','true'),_0x3cc0c6['innerHTML']=_0xb6edf6(0x1d8)+_0x40f47b+_0xb6edf6(0x1ee),document[_0xb6edf6(0x1fc)](_0xb6edf6(0x1e2))[_0xb6edf6(0x1f0)](_0x3cc0c6),setTimeout(()=>_0x3cc0c6[_0xb6edf6(0x1db)](),0xfa0);}
+            const services = [
+                {id: 'Dev.01', title: 'Custom Business Applications', desc: 'Engineering bespoke internal tools and customer-facing platforms designed to handle complex business logic and high-volume operations.'},
+                {id: 'Auto.02', title: 'Intelligent Process Automation', desc: 'Eliminating manual friction by connecting disparate systems and deploying autonomous agents to handle repetitive high-value tasks.'},
+                {id: 'Cloud.03', title: 'Scalable Cloud Architecture', desc: 'Architecting secure, high-availability infrastructure that scales automatically with your growth while optimizing for global performance.'},
+                {id: 'Cons.04', title: 'Fractional CTO & Advisory', desc: 'Strategic technical leadership and system audits to map out implementation roadmaps for enterprise-wide digital transformation.'},
+                {id: 'Web.05', title: 'Enterprise Digital Platforms', desc: 'Developing high-performance, SEO-optimized web experiences with custom content architectures that give your team total control.'},
+                {id: 'Tools.06', title: 'Decision-Support Systems', desc: 'Building custom data extraction engines and operational dashboards that turn fragmented data into actionable business intelligence.'}
+            ];
+
+            const serviceContainer = document.getElementById('services-container');
+            services.forEach(s => {
+                serviceContainer.innerHTML += `
+                    <div class="bg-white p-12 hover:bg-softWhite transition-colors group border-b lg:border-r border-navy/5">
+                        <div class="font-mono text-[10px] text-cyan mb-8 uppercase tracking-widest">${s.id}</div>
+                        <h3 class="font-display text-xl font-bold mb-6">${s.title}</h3>
+                        <p class="text-sm text-navy/60 leading-relaxed mb-8">${s.desc}</p>
+                        <div class="font-mono text-[10px] text-navy/40 uppercase tracking-tighter italic">Precision Delivery</div>
+                    </div>`;
+            });
+
+            const techStack = {
+                core: ['C#', '.NET Core', 'Angular', 'React', 'TypeScript', 'JavaScript', 'SQL', 'Java (Spring Boot)'],
+                cloud: ['Azure', 'AWS', 'EC2', 'RDS', 'Azure DevOps', 'Jenkins', 'Octopus Deploy', 'Git'],
+                tools: ['RESTful APIs', 'Microservices', 'CI/CD', 'WordPress', 'Shopify', 'Liquid', 'UI/UX Design']
+            };
+
+            const renderTech = (containerId, items) => {
+                const container = document.getElementById(containerId);
+                if (container) {
+                    items.forEach(item => {
+                        container.innerHTML += `
+                            <span class="px-3 py-1 border border-navy/10 font-mono text-[10px] uppercase tracking-wider hover:border-cyan hover:text-cyan transition-colors cursor-default">
+                                ${item}
+                            </span>`;
+                    });
+                }
+            };
+
+            renderTech('tech-core', techStack.core);
+            renderTech('tech-cloud', techStack.cloud);
+            renderTech('tech-tools', techStack.tools);
+
+            const projects = [
+                {title: 'Family Law Attorney', cat: 'WordPress', desc: 'Professional law firm site with localized SEO and conversion-focused design.', url: 'https://familylawattorney.us/'},
+                {title: 'Hearth & Harbor Homes', cat: 'WordPress', desc: 'Premium rental platform with elegant property management logic.', url: 'https://hearthandharborhomes.com/'},
+                {title: 'Aire Socials Agency', cat: 'WordPress', desc: 'Modern agency site with high-end interaction design and service workflows.', url: 'https://airesocialsagency.com/'},
+                {title: 'Kubo Spa', cat: 'WordPress', desc: 'Responsive spa website with online booking and elegant brand design.', url: 'https://phkubospa.cl/'},
+                {title: 'Our Measure', cat: 'WordPress', desc: 'Business analytics platform with dashboards and insights for smarter decisions.', url: 'https://ourmeasure.com/'},
+                {title: 'Global Solutions', cat: 'WordPress', desc: 'Corporate recruitment portal for global workforce management.', url: 'https://global-solutions.net/'},
+                {title: 'Property Management System', cat: 'Full-Stack', desc: 'Custom system for developers to manage property records and sales.', url: null},
+                {title: 'Academic HRIS', cat: 'Full-Stack', desc: 'Custom HR system for faculty management and payroll orchestration.', url: null},
+                {title: 'Research Data Warehouse', cat: 'Research / ML', desc: 'Centralized solution for extension service records.', url: null},
+                {title: 'Mangrove Classification', cat: 'Research / ML', desc: 'Mobile app classifying species using image processing.', url: null},
+                {title: 'Swine Weight Prediction', cat: 'Research / ML', desc: 'Image-based prediction tool using computer vision.', url: null},
+                {title: 'Real Estate Listings', cat: 'Full-Stack', desc: 'High-performance property platform with dynamic filtering.', url: null}
+            ];
+
+            const projectContainer = document.getElementById('project-container');
+            function renderProjects(filter = 'all') {
+                projectContainer.innerHTML = '';
+                const filtered = filter === 'all' ? projects : projects.filter(p => p.cat.toLowerCase().includes(filter.toLowerCase()));
+                filtered.forEach(p => {
+                    const linkHtml = p.url ? `<a href="${p.url}" target="_blank" class="font-mono text-[10px] uppercase tracking-widest text-navy hover:text-cyan transition-colors underline break-all">${p.url} →</a>` : '';
+                    projectContainer.innerHTML += `
+                        <div class="bg-white p-10 border border-navy/5 relative hover:border-cyan/50 transition-all group glow-cyan">
+                            <div class="absolute -top-1 -left-1 w-4 h-4 border-t border-l border-navy/10 group-hover:border-cyan"></div>
+                            <span class="font-mono text-[9px] text-cyan uppercase tracking-widest">${p.cat}</span>
+                            <h3 class="font-display text-lg font-bold mt-4 mb-4 uppercase">${p.title}</h3>
+                            <p class="text-xs text-navy/60 leading-relaxed mb-8">${p.desc}</p>
+                            <div class="h-px w-full bg-navy/5 mb-6"></div>
+                            ${linkHtml}
+                        </div>`;
+                });
+            }
+            renderProjects();
+
+            const filters = document.querySelectorAll('.project-filter');
+            filters.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filters.forEach(f => {
+                        f.classList.remove('bg-navy', 'text-white');
+                        f.classList.add('border-navy/10');
+                    });
+                    btn.classList.add('bg-navy', 'text-white');
+                    btn.classList.remove('border-navy/10');
+                    renderProjects(btn.dataset.filter);
+                });
+            });
+
+            const form = document.getElementById('contactForm');
+            const status = document.getElementById('formStatus');
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    this.time.value = new Date().toLocaleString();
+                    const submitBtn = form.querySelector('button');
+                    submitBtn.disabled = true;
+                    submitBtn.textContent = 'SENDING...';
+                    emailjs.sendForm('service_3ylk8f8', 'template_5nsg1hm', this)
+                        .then(() => {
+                            status.textContent = '✅ Message sent successfully!';
+                            status.classList.remove('hidden', 'text-red-500');
+                            status.classList.add('text-cyan');
+                            form.reset();
+                        })
+                        .catch((err) => {
+                            status.textContent = '❌ System Error. Please try again.';
+                            status.classList.remove('hidden', 'text-cyan');
+                            status.classList.add('text-red-500');
+                        })
+                        .finally(() => {
+                            submitBtn.disabled = false;
+                            submitBtn.textContent = 'EXECUTE_TRANSMISSION';
+                        });
+                });
+            }
+        })();
     </script>
-    <div id="toast-container" class="position-fixed bottom-0 end-0 p-3" style="z-index: 1055;"></div>
-    <a href="https://wa.me/639075357894?text=Hi%20there%2C%20I%20have%20a%20question%20about%20your%20services" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp" data-bs-toggle="tooltip" title="Chat with us on WhatsApp">
+    <a href="https://wa.me/639075357894?text=Hi%20Jerzon,%20I'm%20interested%20in%20your%20services" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
         <i class="bi bi-whatsapp"></i>
     </a>
 </body>
-
 </html>
