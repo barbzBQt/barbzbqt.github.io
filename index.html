@@ -121,6 +121,8 @@
                 <img src="./assets/images/logo.svg" alt="Jerzon Barbacena Logo" class="h-8 w-auto group-hover:opacity-80 transition-opacity">
                 <span class="font-display font-bold text-xl tracking-tighter uppercase">Jerzon<span class="text-cyan">Barbacena</span></span>
             </a>
+            
+            <!-- Desktop Navigation -->
             <div class="hidden lg:flex items-center gap-10 font-mono text-[10px] uppercase tracking-[0.2em]">
                 <a href="#services" class="hover:text-cyan transition-colors">Services</a>
                 <a href="#tech" class="hover:text-cyan transition-colors">Stack</a>
@@ -128,12 +130,36 @@
                 <a href="#process" class="hover:text-cyan transition-colors">Workflow</a>
                 <a href="#contact" class="border border-navy px-5 py-2 hover:bg-cyan hover:border-cyan hover:text-white transition-all">Execute_Inquiry</a>
             </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-toggle" class="lg:hidden text-navy p-2" aria-label="Toggle Menu">
+                <i class="bi bi-list text-2xl"></i>
+            </button>
         </nav>
     </header>
 
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="fixed inset-0 bg-white z-[100] translate-x-full transition-transform duration-300 lg:hidden flex flex-col">
+        <div class="h-20 px-6 flex justify-between items-center border-b border-navy/5">
+            <a class="flex items-center gap-3" href="#home">
+                <img src="./assets/images/logo.svg" alt="Logo" class="h-8 w-auto">
+            </a>
+            <button id="menu-close" class="text-navy p-2">
+                <i class="bi bi-x-lg text-2xl"></i>
+            </button>
+        </div>
+        <div class="flex flex-col p-8 gap-8 font-mono text-sm uppercase tracking-[0.2em]">
+            <a href="#services" class="mobile-link hover:text-cyan">Services</a>
+            <a href="#tech" class="mobile-link hover:text-cyan">Stack</a>
+            <a href="#projects" class="mobile-link hover:text-cyan">Projects</a>
+            <a href="#process" class="mobile-link hover:text-cyan">Workflow</a>
+            <a href="#contact" class="mobile-link bg-navy text-white px-6 py-4 text-center mt-4">Execute_Inquiry</a>
+        </div>
+    </div>
+
     <main class="relative z-10">
         <!-- Hero Section -->
-        <section id="home" class="pt-48 pb-32 border-b border-navy/5 overflow-hidden">
+        <section id="home" class="pt-32 lg:pt-48 pb-20 lg:pb-32 border-b border-navy/5 overflow-hidden">
             <div class="container mx-auto px-6">
                 <div class="grid lg:grid-cols-2 gap-16 items-center">
                     <div class="max-w-2xl">
@@ -145,10 +171,10 @@
                             Precision-Grade <br/>
                             <span class="text-transparent bg-clip-text bg-gradient-to-r from-navy via-navy to-cyan">Software Systems.</span>
                         </h1>
-                        <p class="text-lg text-navy/60 max-w-lg mb-12 leading-relaxed font-light">
+                        <p class="text-base md:text-lg text-navy/60 max-w-lg mb-12 leading-relaxed font-light">
                             From concept to code — I build premium, scalable experiences. I build systems that drive efficiency and precision at scale.
                         </p>
-                        <div class="flex flex-wrap gap-6">
+                        <div class="flex flex-col sm:flex-row gap-6">
                             <a href="#contact" class="bg-navy text-white px-8 py-4 font-bold text-sm tracking-widest uppercase hover:bg-cyan hover:text-white hover:-translate-y-1 hover:shadow-lg transition-all">
                                 Start_Project
                             </a>
@@ -163,7 +189,7 @@
                         </div>
                     </div>
                     
-                    <div class="relative flex justify-center items-center h-[300px] lg:h-[400px]">
+                    <div class="relative flex justify-center items-center h-[250px] md:h-[300px] lg:h-[400px]">
                         <svg width="100%" height="100%" viewBox="0 0 400 300" class="max-w-md">
                             <path d="M 50 150 H 180" stroke="#0B1F3A" stroke-width="2" fill="none" class="hero-line-1" />
                             <circle cx="200" cy="150" r="6" stroke="#1e3a8a" stroke-width="2" fill="white" class="hero-node" />
@@ -219,41 +245,62 @@
         </section>
 
         <!-- Tech Stack -->
-        <section id="tech" class="py-32 bg-white border-t border-navy/5">
+        <section id="tech" class="py-20 lg:py-32 bg-white border-t border-navy/5">
             <div class="container mx-auto px-6">
                 <div class="max-w-2xl mb-20">
                     <span class="font-mono text-[10px] text-cyan uppercase tracking-[0.4em] block mb-4">02 // Tech Stack</span>
-                    <h2 class="font-display text-4xl font-bold tracking-tight text-navy">Enterprise-Grade Tooling</h2>
+                    <h2 class="font-display text-4xl font-bold tracking-tight text-navy uppercase">Enterprise-Grade Engineering</h2>
                 </div>
 
-                <div class="grid md:grid-cols-3 gap-12">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16">
                     <div>
                         <h4 class="font-display font-bold text-sm uppercase tracking-widest mb-6 flex items-center gap-2">
-                            <span class="w-1.5 h-1.5 bg-cyan"></span>
-                            Core Stack
+                            Core Engineering Stack
                         </h4>
                         <div class="flex flex-wrap gap-2" id="tech-core"></div>
                     </div>
                     <div>
                         <h4 class="font-display font-bold text-sm uppercase tracking-widest mb-6 flex items-center gap-2">
-                            <span class="w-1.5 h-1.5 bg-cyan"></span>
-                            Infrastructure
+                            System Architecture
+                        </h4>
+                        <div class="flex flex-wrap gap-2" id="tech-arch"></div>
+                    </div>
+                    <div>
+                        <h4 class="font-display font-bold text-sm uppercase tracking-widest mb-6 flex items-center gap-2">
+                            Automation & Integration
+                        </h4>
+                        <div class="flex flex-wrap gap-2" id="tech-automation"></div>
+                    </div>
+                    <div>
+                        <h4 class="font-display font-bold text-sm uppercase tracking-widest mb-6 flex items-center gap-2">
+                            Cloud & Infrastructure
                         </h4>
                         <div class="flex flex-wrap gap-2" id="tech-cloud"></div>
                     </div>
                     <div>
                         <h4 class="font-display font-bold text-sm uppercase tracking-widest mb-6 flex items-center gap-2">
-                            <span class="w-1.5 h-1.5 bg-cyan"></span>
-                            Architecture
+                            DevOps & Delivery
                         </h4>
-                        <div class="flex flex-wrap gap-2" id="tech-tools"></div>
+                        <div class="flex flex-wrap gap-2" id="tech-devops"></div>
+                    </div>
+                    <div>
+                        <h4 class="font-display font-bold text-sm uppercase tracking-widest mb-6 flex items-center gap-2">
+                            Data & Systems
+                        </h4>
+                        <div class="flex flex-wrap gap-2" id="tech-data"></div>
+                    </div>
+                    <div>
+                        <h4 class="font-display font-bold text-sm uppercase tracking-widest mb-6 flex items-center gap-2">
+                            Data Extraction & Processing
+                        </h4>
+                        <div class="flex flex-wrap gap-2" id="tech-extraction"></div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Projects -->
-        <section id="projects" class="py-32 bg-softWhite">
+        <section id="projects" class="py-20 lg:py-32 bg-softWhite">
             <div class="container mx-auto px-6">
                 <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
                     <div class="max-w-2xl">
@@ -274,14 +321,14 @@
         </section>
 
         <!-- Workflow / Process -->
-        <section id="process" class="py-32 bg-white">
+        <section id="process" class="py-20 lg:py-32 bg-white">
             <div class="container mx-auto px-6">
                 <div class="max-w-3xl mb-24">
                     <span class="font-mono text-[10px] text-cyan uppercase tracking-[0.4em] block mb-4">04 // Workflow</span>
                     <h2 class="font-display text-4xl font-bold tracking-tight">Structured Problem Solving</h2>
                 </div>
 
-                <div class="grid md:grid-cols-4 gap-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
                     <div class="relative group">
                         <div class="font-mono text-cyan text-[10px] mb-6">01_DISCOVERY</div>
                         <div class="w-full h-px bg-navy/10 mb-6 relative">
@@ -319,9 +366,9 @@
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="py-32 bg-white border-t border-navy/5">
+        <section id="contact" class="py-20 lg:py-32 bg-white border-t border-navy/5">
             <div class="container mx-auto px-6">
-                <div class="grid lg:grid-cols-2 gap-24 items-start">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
                     <div>
                         <span class="font-mono text-[10px] text-cyan uppercase tracking-[0.4em] block mb-4">05 // Contact</span>
                         <h2 class="font-display text-4xl font-bold mb-8 tracking-tight uppercase">Initialize_Inquiry</h2>
@@ -339,7 +386,7 @@
                         </div>
                     </div>
                     
-                    <div class="bg-softWhite p-10 border border-navy/5 relative">
+                    <div class="bg-softWhite p-6 lg:p-10 border border-navy/5 relative">
                         <div class="absolute -top-1 -left-1 w-6 h-6 border-t border-l border-cyan"></div>
                         <form id="contactForm" class="space-y-8">
                             <input type="hidden" name="time">
@@ -382,6 +429,28 @@
             emailjs.init("pmrNieUSeT4KeVxwr");
             document.getElementById('year').textContent = new Date().getFullYear();
 
+            // Mobile Menu Controller
+            const menuToggle = document.getElementById('menu-toggle');
+            const menuClose = document.getElementById('menu-close');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+
+            if (menuToggle && mobileMenu) {
+                menuToggle.addEventListener('click', () => {
+                    mobileMenu.classList.remove('translate-x-full');
+                });
+            }
+
+            if (menuClose && mobileMenu) {
+                menuClose.addEventListener('click', () => {
+                    mobileMenu.classList.add('translate-x-full');
+                });
+            }
+
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => mobileMenu.classList.add('translate-x-full'));
+            });
+
             const services = [
                 {id: 'Dev.01', title: 'Custom Business Applications', desc: 'Engineering bespoke internal tools and customer-facing platforms designed to handle complex business logic and high-volume operations.'},
                 {id: 'Auto.02', title: 'Intelligent Process Automation', desc: 'Eliminating manual friction by connecting disparate systems and deploying autonomous agents to handle repetitive high-value tasks.'},
@@ -403,9 +472,13 @@
             });
 
             const techStack = {
-                core: ['C#', '.NET Core', 'Angular', 'React', 'TypeScript', 'JavaScript', 'SQL', 'Java (Spring Boot)'],
-                cloud: ['Azure', 'AWS', 'EC2', 'RDS', 'Azure DevOps', 'Jenkins', 'Octopus Deploy', 'Git'],
-                tools: ['RESTful APIs', 'Microservices', 'CI/CD', 'WordPress', 'Shopify', 'Liquid', 'UI/UX Design']
+                core: ['C#', '.NET Core', 'Angular', 'React', 'TypeScript', 'JavaScript', 'SQL', 'WordPress'],
+                arch: ['RESTful APIs & system integrations', 'Microservices & modular architecture', 'Event-driven workflows (webhooks & async processing)', 'System integration & API orchestration', 'Scalable full-stack system design'],
+                automation: ['n8n (workflow automation)', 'GoHighLevel (CRM & business automation)', 'API integrations (3rd-party systems)', 'SendGrid (transactional email & notifications)'],
+                cloud: ['Azure & AWS', 'EC2', 'RDS', 'OneDrive & cloud storage systems', 'High-availability & scalable environments'],
+                devops: ['CI/CD pipelines', 'Azure DevOps', 'Jenkins', 'Octopus Deploy', 'Git & GitHub', 'Version control & deployment workflows'],
+                data: ['Data modeling & schema design', 'Database optimization', 'Cross-system data flow'],
+                extraction: ['Playwright (browser automation & scraping)', '.NET Console apps for data pipelines', 'Automated PDF extraction & processing', 'Microsoft Graph API (file handling & uploads)', 'OneDrive integration (document storage workflows)']
             };
 
             const renderTech = (containerId, items) => {
@@ -421,8 +494,12 @@
             };
 
             renderTech('tech-core', techStack.core);
+            renderTech('tech-arch', techStack.arch);
+            renderTech('tech-automation', techStack.automation);
             renderTech('tech-cloud', techStack.cloud);
-            renderTech('tech-tools', techStack.tools);
+            renderTech('tech-devops', techStack.devops);
+            renderTech('tech-data', techStack.data);
+            renderTech('tech-extraction', techStack.extraction);
 
             const projects = [
                 {title: 'Family Law Attorney', cat: 'WordPress', desc: 'Professional law firm site with localized SEO and conversion-focused design.', url: 'https://familylawattorney.us/'},
