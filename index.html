@@ -108,9 +108,9 @@
         @keyframes pulseNode { 0% { opacity: 0; transform: scale(0.8); } 50% { opacity: 0.5; } 100% { opacity: 0; transform: scale(1.8); } }
 
         /* Scroll Reveal Utility */
-        .reveal { opacity: 0; transform: translateY(20px); transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+        .reveal { opacity: 0; transform: translateY(20px); transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); will-change: opacity, transform; -webkit-backface-visibility: hidden; }
         .reveal.active { opacity: 1; transform: translateY(0); }
-        .reveal-stagger > * { opacity: 0; transform: translateY(15px); transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1); }
+        .reveal-stagger > * { opacity: 0; transform: translateY(15px); transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1); will-change: opacity, transform; -webkit-backface-visibility: hidden; }
         .reveal-stagger.active > * { opacity: 1; transform: translateY(0); }
         .glow-accent:hover { box-shadow: 0 0 20px rgba(37, 99, 235, 0.1); border-color: rgba(37, 99, 235, 0.3); }
     </style>
